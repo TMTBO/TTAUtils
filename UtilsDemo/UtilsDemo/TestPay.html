@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPay</title>
+
+    <script>
+        // Did click wechat_pay button
+        function wechat_pay() {
+            document.getElementById("show_label").textContent = "Clicked web pay Button";
+            // post the message to iOS
+            // 传递参数说明:
+            // wechat :
+            //      mid:    用户id
+            //      sp_id:  商品id
+            //
+            // apple pay:
+            //      ios_product_id: 商品id
+            //window.webkit.messageHandlers.pay.postMessage({"mid": "6", "sp_id": "1"});
+            window.webkit.messageHandlers.pay.postMessage({"sp_id": "1", "ios_product_id": "com.wrq.product.6", "num": 4});
+        }
+    function ali_pay() {
+        document.getElementById("show_label").textContent = "Clicked ali pay Button";
+        // post the message to iOS
+        // 传递参数说明:
+        // wechat :
+        //      mid:    用户id
+        //      sp_id:  商品id
+        //
+        // apple pay:
+        //      ios_product_id: 商品id
+        //window.webkit.messageHandlers.pay.postMessage({"mid": "6", "sp_id": "1"});
+        window.webkit.messageHandlers.alipay.postMessage({"sp_id": "1", "ios_product_id": "com.wrq.product.6", "num": 4});
+    }
+
+        // get wechat pay status
+        function getWebpayCallback(para1, para2) {
+            document.getElementById("show_label").textContent = para1 + para2;
+        }
+    </script>
+
+
+</head>
+<body>
+    <label>   1 </label><br>
+    <label>   2 </label><br>
+    <label>   3 </label><br>
+    <label>   4 </label><br>
+    <label>   5 </label><br>
+    <button id="wechat_pay" onclick="wechat_pay()">webpayButton</button><br>
+    <button id="wechat_pay" onclick="ali_pay()">webpayButton</button><br>
+    <label>   5 </label><br>
+    <label>   5 </label><br>
+    <label>   5 </label><br>
+    <label>   5 </label><br>
+    <label>   5 </label><br>
+
+
+    <label id="show_label">This is a test Label</label>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+//
+//  GlobalUtils.pch
+//  UtilsDemo
+//
+//  Created by TobyoTenma on 06/10/2016.
+//  Copyright © 2016 TobyoTenma. All rights reserved.
+//
+
+#ifndef GlobalUtils_pch
+#define GlobalUtils_pch
+
+#import <objc/runtime.h>
+
+#pragma mark - Common
+#import "NSArray+Common.h"
+#import "NSDictionary+Common.h"
+#import "UIView+Common.h"
+#import "UIAlertController+Common.h"
+#import "UIColor+Common.h"
+#import "UIImage+Common.h"
+
+#pragma mark - Category
+#import "UIView+Frame.h"                                /// frame修改相关
+#import "NSString+RegularExpression.h"                  /// 正则相关
+#import "NSString+Matching.h"                           /// 智能匹配
+#import "NSObject+Log.h"                                /// 数组与字典输入详情
+
+#pragma mark - Block
+#import "UIButton+Block.h"
+
+#pragma mark - Other
+#import "TTASingleton.h"
+#import "DefineMacro.h"
+
+#pragma mark - Swift
+#import "UtilsDemo-Swift.h"
+
+#endif /* GlobalUtils_pch */
