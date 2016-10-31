@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */; };
+		790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174C81DC790F800D87D2A /* AppDelegate+AppService.m */; };
+		790174CC1DC796F300D87D2A /* TTABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174CB1DC796F300D87D2A /* TTABaseViewController.m */; };
+		790174CF1DC7971900D87D2A /* TTABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */; };
+		790174D21DC7973D00D87D2A /* TTABaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */; };
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
@@ -19,8 +24,6 @@
 		795AC7521DB3403900419703 /* UIViewCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AC7511DB3403900419703 /* UIViewCommon.swift */; };
 		797D21F11D8AED2800770B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D21F01D8AED2800770B72 /* main.m */; };
 		797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D21F31D8AED2800770B72 /* AppDelegate.m */; };
-		797D21F71D8AED2800770B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D21F61D8AED2800770B72 /* ViewController.m */; };
-		797D21FA1D8AED2800770B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D21F81D8AED2800770B72 /* Main.storyboard */; };
 		797D21FC1D8AED2800770B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797D21FB1D8AED2800770B72 /* Assets.xcassets */; };
 		797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */; };
 		797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22091D8AED2800770B72 /* UtilsDemoTests.m */; };
@@ -51,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790174C41DC790CD00D87D2A /* AppDelegate+RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootController.h"; sourceTree = "<group>"; };
+		790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootController.m"; sourceTree = "<group>"; };
+		790174C71DC790F800D87D2A /* AppDelegate+AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		790174C81DC790F800D87D2A /* AppDelegate+AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		790174CA1DC796F300D87D2A /* TTABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseViewController.h; sourceTree = "<group>"; };
+		790174CB1DC796F300D87D2A /* TTABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseViewController.m; sourceTree = "<group>"; };
+		790174CD1DC7971900D87D2A /* TTABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseTableViewController.h; sourceTree = "<group>"; };
+		790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseTableViewController.m; sourceTree = "<group>"; };
+		790174D01DC7973D00D87D2A /* TTABaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseCollectionViewController.h; sourceTree = "<group>"; };
+		790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseCollectionViewController.m; sourceTree = "<group>"; };
 		790539CD1DA61E96002EB686 /* NSArray+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Common.h"; sourceTree = "<group>"; };
 		790539CE1DA61E96002EB686 /* NSArray+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Common.m"; sourceTree = "<group>"; };
 		790539CF1DA61E96002EB686 /* NSDictionary+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
@@ -78,9 +91,6 @@
 		797D21F01D8AED2800770B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		797D21F21D8AED2800770B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		797D21F31D8AED2800770B72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		797D21F51D8AED2800770B72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		797D21F61D8AED2800770B72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		797D21F91D8AED2800770B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797D21FB1D8AED2800770B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797D21FE1D8AED2800770B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		797D22001D8AED2800770B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +138,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790174BD1DC78E6700D87D2A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				790174BE1DC78E6700D87D2A /* Controllers */,
+				790174C11DC78E6700D87D2A /* Models */,
+				790174C21DC78E6700D87D2A /* Tools */,
+				790174C31DC78E6700D87D2A /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		790174BE1DC78E6700D87D2A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				790174BF1DC78E6700D87D2A /* Home */,
+				790174C01DC78E6700D87D2A /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		790174BF1DC78E6700D87D2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		790174C01DC78E6700D87D2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				790174CA1DC796F300D87D2A /* TTABaseViewController.h */,
+				790174CB1DC796F300D87D2A /* TTABaseViewController.m */,
+				790174CD1DC7971900D87D2A /* TTABaseTableViewController.h */,
+				790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */,
+				790174D01DC7973D00D87D2A /* TTABaseCollectionViewController.h */,
+				790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		790174C11DC78E6700D87D2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		790174C21DC78E6700D87D2A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		790174C31DC78E6700D87D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		790539CC1DA61E96002EB686 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,11 +261,13 @@
 			isa = PBXGroup;
 			children = (
 				797D22221D8AED7E00770B72 /* Utils */,
+				790174BD1DC78E6700D87D2A /* Classes */,
 				797D21F21D8AED2800770B72 /* AppDelegate.h */,
 				797D21F31D8AED2800770B72 /* AppDelegate.m */,
-				797D21F51D8AED2800770B72 /* ViewController.h */,
-				797D21F61D8AED2800770B72 /* ViewController.m */,
-				797D21F81D8AED2800770B72 /* Main.storyboard */,
+				790174C41DC790CD00D87D2A /* AppDelegate+RootController.h */,
+				790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */,
+				790174C71DC790F800D87D2A /* AppDelegate+AppService.h */,
+				790174C81DC790F800D87D2A /* AppDelegate+AppService.m */,
 				797D21FB1D8AED2800770B72 /* Assets.xcassets */,
 				797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */,
 				797D22001D8AED2800770B72 /* Info.plist */,
@@ -401,7 +474,6 @@
 				797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */,
 				79C960E91DB9D6C800A28335 /* TestPay.html in Resources */,
 				797D21FC1D8AED2800770B72 /* Assets.xcassets in Resources */,
-				797D21FA1D8AED2800770B72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,18 +500,22 @@
 			files = (
 				79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */,
 				792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */,
+				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,
 				790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */,
-				797D21F71D8AED2800770B72 /* ViewController.m in Sources */,
 				790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */,
 				792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */,
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
+				790174CC1DC796F300D87D2A /* TTABaseViewController.m in Sources */,
 				790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */,
+				790174D21DC7973D00D87D2A /* TTABaseCollectionViewController.m in Sources */,
+				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
 				797F48291DC0FAA4004996EF /* TTACoreDataManagedContext.m in Sources */,
 				79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,
 				792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */,
+				790174CF1DC7971900D87D2A /* TTABaseTableViewController.m in Sources */,
 				792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */,
 				797D21F11D8AED2800770B72 /* main.m in Sources */,
 				795AC74C1DB3323D00419703 /* UIView+Common.m in Sources */,
@@ -479,14 +555,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		797D21F81D8AED2800770B72 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				797D21F91D8AED2800770B72 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
