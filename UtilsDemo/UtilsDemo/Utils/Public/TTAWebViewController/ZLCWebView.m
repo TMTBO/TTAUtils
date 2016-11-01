@@ -130,7 +130,7 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
     
     
     //设置进度条颜色
-    [self setTintColor:kGreenColor];
+    [self setTintColor:kGREEN_COLOR];
     [self addSubview:self.progressView];
     
 }
@@ -432,7 +432,7 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if(alertView == self.externalAppPermissionAlertView) {
         if(buttonIndex != alertView.cancelButtonIndex) {
-            [[UIApplication sharedApplication] openURL:self.URLToLaunchWithPermission];
+            [[UIApplication sharedApplication] openURL:self.URLToLaunchWithPermission options:nil completionHandler:nil];
         }
         self.URLToLaunchWithPermission = nil;
     }

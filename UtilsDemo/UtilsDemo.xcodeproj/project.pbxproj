@@ -15,6 +15,8 @@
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
+		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
+		7926A1791DC8E2E800DF4744 /* TTAMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */; };
 		792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */; };
 		792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCE1DB92CEF00FF326D /* UIColor+Common.m */; };
 		792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BD01DB92CEF00FF326D /* UIImage+Common.m */; };
@@ -29,7 +31,6 @@
 		797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22091D8AED2800770B72 /* UtilsDemoTests.m */; };
 		797D22151D8AED2800770B72 /* UtilsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22141D8AED2800770B72 /* UtilsDemoUITests.m */; };
 		797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22251D8AEDB100770B72 /* UIView+Frame.m */; };
-		797F48291DC0FAA4004996EF /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F48281DC0FAA4004996EF /* TTACoreDataManagedContext.m */; };
 		79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
@@ -71,6 +72,10 @@
 		790539D41DA61F5B002EB686 /* GlobalUtils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.pch; sourceTree = "<group>"; };
 		790539D51DA627C3002EB686 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		7926A1741DC8DD6100DF4744 /* TTACoreDataManagedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTACoreDataManagedContext.h; sourceTree = "<group>"; };
+		7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTACoreDataManagedContext.m; sourceTree = "<group>"; };
+		7926A1771DC8E2E800DF4744 /* TTAMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAMainTabBarController.h; sourceTree = "<group>"; };
+		7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAMainTabBarController.m; sourceTree = "<group>"; };
 		792B1BCA1DB92CA200FF326D /* NSString+RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExpression.h"; sourceTree = "<group>"; };
 		792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExpression.m"; sourceTree = "<group>"; };
 		792B1BCD1DB92CEF00FF326D /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
@@ -102,8 +107,6 @@
 		797D22161D8AED2800770B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797D22241D8AEDB100770B72 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		797D22251D8AEDB100770B72 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		797F48271DC0FAA4004996EF /* TTACoreDataManagedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTACoreDataManagedContext.h; sourceTree = "<group>"; };
-		797F48281DC0FAA4004996EF /* TTACoreDataManagedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTACoreDataManagedContext.m; sourceTree = "<group>"; };
 		79B0F7491DB66BDE002ABC72 /* UIAlertController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Common.h"; sourceTree = "<group>"; };
 		79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Common.m"; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */,
 				790174D01DC7973D00D87D2A /* TTABaseCollectionViewController.h */,
 				790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */,
+				7926A1771DC8E2E800DF4744 /* TTAMainTabBarController.h */,
+				7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -335,8 +340,8 @@
 		797F48261DC0FAA4004996EF /* TTACoreDataManagedContext */ = {
 			isa = PBXGroup;
 			children = (
-				797F48271DC0FAA4004996EF /* TTACoreDataManagedContext.h */,
-				797F48281DC0FAA4004996EF /* TTACoreDataManagedContext.m */,
+				7926A1741DC8DD6100DF4744 /* TTACoreDataManagedContext.h */,
+				7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */,
 			);
 			path = TTACoreDataManagedContext;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 		797D21E41D8AED2800770B72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TTA;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = TobyoTenma;
 				TargetAttributes = {
@@ -508,10 +514,11 @@
 				792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */,
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
 				790174CC1DC796F300D87D2A /* TTABaseViewController.m in Sources */,
+				7926A1791DC8E2E800DF4744 /* TTAMainTabBarController.m in Sources */,
 				790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */,
 				790174D21DC7973D00D87D2A /* TTABaseCollectionViewController.m in Sources */,
+				7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */,
 				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
-				797F48291DC0FAA4004996EF /* TTACoreDataManagedContext.m in Sources */,
 				79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,
 				792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */,

@@ -6,8 +6,8 @@
 //  Copyright © 2016 TobyoTenma. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TTABaseViewController.h"
 
-@interface TTABaseTableViewController : UIViewController
+@interface TTABaseTableViewController : TTABaseViewController
 
 @end

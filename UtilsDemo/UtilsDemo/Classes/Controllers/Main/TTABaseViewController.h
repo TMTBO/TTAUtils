@@ -9,15 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface TTABaseViewController : UIViewController
+
+/**
+ 设置 UI
+ */
+- (void)setupUI;
+
 /**
  *  显示没有数据页面
  */
--(void)showNoDataImage;
+- (void)showNoDataImage;
 
 /**
  *  移除无数据页面
  */
--(void)removeNoDataImage;
+- (void)removeNoDataImage;
 
 /**
  *  需要登录

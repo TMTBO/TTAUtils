@@ -23,12 +23,12 @@
 /**
  *  友盟注册
  */
-- (void)registerUmeng;
+//- (void)registerUmeng;
 /**
  *  Mob注册
  */
 
-- (void)registerMob;
+//- (void)registerMob;
 
 /**
  *  检查更新

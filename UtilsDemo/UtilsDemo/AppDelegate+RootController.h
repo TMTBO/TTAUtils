@@ -18,10 +18,6 @@
  *  首次启动轮播图
  */
 - (void)createLoadingScrollView;
-/**
- *  tabbar实例
- */
-- (void)setTabbarController;
 
 /**
  *  window实例

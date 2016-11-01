@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+RootController.h"
+#import "AppDelegate+AppService.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setAppWindows];
+    [self setRootViewController];
+    
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

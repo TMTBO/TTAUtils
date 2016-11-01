@@ -65,7 +65,7 @@
     UIButton * closeItem = [[UIButton alloc]initWithFrame:CGRectMake(20+12, 0, 44, 44)];
     [closeItem setTitle:@"关闭" forState:UIControlStateNormal];
     [closeItem.titleLabel setFont:[UIFont systemFontOfSize:14]];
-    [closeItem setTitleColor:kBlueColor forState:UIControlStateNormal];
+    [closeItem setTitleColor:kBLUE_COLOR forState:UIControlStateNormal];
     [closeItem addTarget:self action:@selector(clickedCloseItem:) forControlEvents:UIControlEventTouchUpInside];
     closeItem.hidden = YES;
     self.closeItem = closeItem;
