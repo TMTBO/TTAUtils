@@ -42,7 +42,10 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
 @property (nonatomic, assign) BOOL uiWebViewIsLoading;
 @property (nonatomic, strong) NSURL *uiWebViewCurrentURL;
 @property (nonatomic, strong) NSURL *URLToLaunchWithPermission;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic, strong) UIAlertView *externalAppPermissionAlertView;
+#pragma clang diagnostic pop
 
 
 @end
@@ -428,18 +431,19 @@ static void *KINWebBrowserContext = &KINWebBrowserContext;
 }
 
 #pragma mark - UIAlertViewDelegate
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if(alertView == self.externalAppPermissionAlertView) {
         if(buttonIndex != alertView.cancelButtonIndex) {
-            [[UIApplication sharedApplication] openURL:self.URLToLaunchWithPermission options:nil completionHandler:nil];
+            [[UIApplication sharedApplication] openURL:self.URLToLaunchWithPermission options:@{} completionHandler:nil];
         }
         self.URLToLaunchWithPermission = nil;
     }
 }
+#pragma clang diagnostic pop
 
 #pragma mark - Dealloc
-
 - (void)dealloc {
     [self.uiWebView setDelegate:nil];
     [self.wkWebView setNavigationDelegate:nil];

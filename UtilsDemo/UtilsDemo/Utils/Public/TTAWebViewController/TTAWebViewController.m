@@ -77,6 +77,10 @@
 
 - (void)zlcwebViewDidReceivedJSMessage:(WKScriptMessage *)message {
     NSLog(@"接收到js的消息:%@", message.name);
+    WEAK_OBJECT(message);
+    if (self.receivedJSMessageBlock) {
+        self.receivedJSMessageBlock(messageWeak);
+    }
 }
 
 - (void)zlcwebViewDidStartLoad:(ZLCWebView *)webview
