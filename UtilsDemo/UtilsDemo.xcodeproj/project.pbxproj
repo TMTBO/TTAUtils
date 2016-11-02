@@ -31,6 +31,7 @@
 		797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22091D8AED2800770B72 /* UtilsDemoTests.m */; };
 		797D22151D8AED2800770B72 /* UtilsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22141D8AED2800770B72 /* UtilsDemoUITests.m */; };
 		797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22251D8AEDB100770B72 /* UIView+Frame.m */; };
+		79AB8A8A1DCA36B600D6CECF /* TTABaseArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */; };
 		79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
@@ -107,6 +108,8 @@
 		797D22161D8AED2800770B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797D22241D8AEDB100770B72 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		797D22251D8AEDB100770B72 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		79AB8A881DCA36B600D6CECF /* TTABaseArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseArrayDataSource.h; sourceTree = "<group>"; };
+		79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseArrayDataSource.m; sourceTree = "<group>"; };
 		79B0F7491DB66BDE002ABC72 /* UIAlertController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Common.h"; sourceTree = "<group>"; };
 		79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Common.m"; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 		790174C01DC78E6700D87D2A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				79AB8A871DCA362F00D6CECF /* DataSource */,
 				790174CA1DC796F300D87D2A /* TTABaseViewController.h */,
 				790174CB1DC796F300D87D2A /* TTABaseViewController.m */,
 				790174CD1DC7971900D87D2A /* TTABaseTableViewController.h */,
@@ -346,6 +350,15 @@
 			path = TTACoreDataManagedContext;
 			sourceTree = "<group>";
 		};
+		79AB8A871DCA362F00D6CECF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				79AB8A881DCA36B600D6CECF /* TTABaseArrayDataSource.h */,
+				79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		79C960E11DB9D67E00A28335 /* TTAWebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +519,7 @@
 			files = (
 				79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */,
 				792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */,
+				79AB8A8A1DCA36B600D6CECF /* TTABaseArrayDataSource.m in Sources */,
 				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,

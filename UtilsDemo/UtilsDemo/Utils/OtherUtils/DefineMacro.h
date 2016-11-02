@@ -83,8 +83,8 @@ alpha:a]
 
 /*==================== WeakObject ========================*/
 #pragma mark - WeakObject
-#define WEAK_OBJECT(type)  __weak typeof(type) ##typeWeak = type;
-#define STRONG_OBJECT(type)  __strong typeof(type) type = ##typeWeak;
+#define WEAK_OBJECT(type)  __weak typeof(type) type##Weak = type;
+#define STRONG_OBJECT(type)  __strong typeof(type) type = type##Weak;
 
 /*==================== ActivityIndicator ========================*/
 #pragma mark - ActivityIndicator
