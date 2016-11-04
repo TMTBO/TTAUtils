@@ -8,6 +8,12 @@
 
 #import "TTABaseViewController.h"
 
-@interface TTABaseCollectionViewController : TTABaseViewController
+@interface TTABaseCollectionViewController : TTABaseViewController <UICollectionViewDelegate>
+
+
+/**
+ 注册 collectionViewCell
+ */
+- (void)registerCells;
 
 @end

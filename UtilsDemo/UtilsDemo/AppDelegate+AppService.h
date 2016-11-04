@@ -13,7 +13,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (AppService)
-- (void)registerBugly;
+//- (void)registerBugly;
 
 /**
  *  基本配置

@@ -73,4 +73,20 @@
     _configureCellBlock(cell, item);
     return cell;
 }
+
+#pragma mark - Getter && Setter
+
+/**
+ 设置数据源的数据数组
+
+ @param aView 数据源作用的 tableView 或者 collectionView
+ @param items 数据数组
+ */
+- (void)setView:(id)aView withItems:(NSArray *)items {
+    _items = items;
+    
+    if ([aView isKindOfClass:[UITableView class]] || [aView isKindOfClass:[UICollectionView class]]) {
+        [aView reloadData];
+    }
+}
 @end

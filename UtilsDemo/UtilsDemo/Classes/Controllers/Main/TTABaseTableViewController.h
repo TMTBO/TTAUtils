@@ -8,6 +8,19 @@
 
 #import "TTABaseViewController.h"
 
-@interface TTABaseTableViewController : TTABaseViewController
+@class TTABaseArrayDataSource;
+
+@interface TTABaseTableViewController : TTABaseViewController <UITableViewDelegate>{
+    UITableView *_tableView;
+    /**
+     *  数据源
+     */
+    TTABaseArrayDataSource *_baseArrayDataSource;
+}
+
+/**
+ 注册 tableViewCell
+ */
+- (void)registerCells;
 
 @end

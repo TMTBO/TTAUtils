@@ -16,6 +16,11 @@
 - (void)setupUI;
 
 /**
+ 获取数据
+ */
+- (void)getData;
+
+/**
  *  显示没有数据页面
  */
 - (void)showNoDataImage;
@@ -39,14 +44,6 @@
  *  停止加载
  */
 - (void)stopLoadingAnimation;
-
-/**
- *  分享页面
- *
- *  @param url   url
- *  @param title 标题
- */
-- (void)shareUrl:(NSString *)url andTitle:(NSString *)title;
 
 - (void)goLogin;
 

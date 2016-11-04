@@ -26,6 +26,14 @@
     self.view.backgroundColor = kWHITE_COLOR;
 }
 
+/**
+ 获取数据
+ */
+- (void)getData {
+    // do nothing here
+    // subclass rewrite it
+}
+
 
 
 @end

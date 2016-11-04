@@ -21,4 +21,12 @@ typedef void (^TTAConfigureCellBlock)(id cell, id item);
  */
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
+/**
+ 设置数据源的数据数组,设置完成后自动刷新
+ 
+ @param aView 数据源作用的 tableView 或者 collectionView
+ @param items 数据数组
+ */
+- (void)setView:(id)aView withItems:(NSArray *)items;
+
 @end

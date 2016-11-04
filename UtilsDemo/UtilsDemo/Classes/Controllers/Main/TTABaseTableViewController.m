@@ -9,15 +9,11 @@
 #import "TTABaseTableViewController.h"
 #import "TTABaseArrayDataSource.h"
 
+#import "TTATestTableViewController.h"
+
 #define CellIdentifier @"cell"
 
-@interface TTABaseTableViewController () {
-    UITableView *_tableView;
-    /**
-     *  数据源
-     */
-    TTABaseArrayDataSource *_baseArrayDataSource;
-}
+@interface TTABaseTableViewController () 
 @end
 
 @implementation TTABaseTableViewController
@@ -25,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self getData];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -37,24 +34,25 @@
     [super setupUI];
     [self prepareTableView];
 }
-// TODO: 异步获取数据优化
+
 - (void)prepareTableView {
-    [self getDataSucc:^(NSArray *items) {
-        _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithItems:items cellIdentifer:CellIdentifier configureCellBlock:^(id cell, id item) {
-            UITableViewCell *aCell = (UITableViewCell *)cell;
-            aCell.textLabel.text = item;
-        }];
-        [_tableView reloadData];
-    } failed:^(NSString *error) {
-        
+    _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithItems:nil cellIdentifer:CellIdentifier configureCellBlock:^(id cell, id item) {
+        UITableViewCell *aCell = (UITableViewCell *)cell;
+        aCell.textLabel.text = item;
     }];
     
     _tableView = [[UITableView alloc] init];
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.dataSource = _baseArrayDataSource;
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
+    _tableView.delegate = self;
+    
+    [self registerCells];
     
     [self.view addSubview:_tableView];
+}
+
+- (void)registerCells {
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
 }
 
 - (void)layoutTableView {
@@ -62,14 +60,18 @@
 }
 
 #pragma mark - Data
-- (void)getDataSucc:(void (^)(NSArray *items))succ failed:(void (^)(NSString *error))failed {
+- (void)getData {
     NSArray *items = @[@"hello", @"world", @"tomorrow", @"today", @"yestoday"];
-    succ(items);
+    
+    [_baseArrayDataSource setView:_tableView withItems:items];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    TTATestTableViewController *testVc = [[TTATestTableViewController alloc] init];
+    [self.navigationController pushViewController:testVc animated:YES];
 }
 
 
