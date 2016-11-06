@@ -17,7 +17,7 @@
  *
  *  @return 返回一张 1 个相素点大小的指定颜色的纯色图片
  */
-+ (UIImage *)imageWithColor:(UIColor *)aColor;
++ (UIImage *)tta_imageWithColor:(UIColor *)aColor;
 /**
  *  获取一个指定颜色指定大小的纯色图片
  *
@@ -26,6 +26,6 @@
  *
  *  @return 返回一张指定 frame 的纯色图片
  */
-+ (UIImage *)imageWithColor:(UIColor *)aColor withFrame:(CGRect)aFrame;
--(void)creatImageWithFrame:(CGRect)aFrame isCircleImage:(BOOL)isCircleImage finish:(void (^)(UIImage *image))finish;
++ (UIImage *)tta_imageWithColor:(UIColor *)aColor withFrame:(CGRect)aFrame;
+-(void)tta_creatImageWithFrame:(CGRect)aFrame isCircleImage:(BOOL)isCircleImage finish:(void (^)(UIImage *image))finish;
 @end

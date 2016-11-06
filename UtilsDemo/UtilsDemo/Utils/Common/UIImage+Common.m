@@ -16,8 +16,8 @@
  *
  *  @return 返回一张 1 个相素点大小的指定颜色的纯色图片
  */
-+ (UIImage *)imageWithColor:(UIColor *)aColor {
-    return [self imageWithColor:aColor withFrame:CGRectMake (0, 0, 1, 1)];
++ (UIImage *)tta_imageWithColor:(UIColor *)aColor {
+    return [self tta_imageWithColor:aColor withFrame:CGRectMake (0, 0, 1, 1)];
 }
 
 /**
@@ -28,7 +28,7 @@
  *
  *  @return 返回一张指定 frame 的纯色图片
  */
-+ (UIImage *)imageWithColor:(UIColor *)aColor withFrame:(CGRect)aFrame {
++ (UIImage *)tta_imageWithColor:(UIColor *)aColor withFrame:(CGRect)aFrame {
     UIGraphicsBeginImageContextWithOptions(aFrame.size, YES, [UIScreen mainScreen].scale);
     CGContextRef ctx = UIGraphicsGetCurrentContext ();
     CGContextSetFillColorWithColor (ctx, [aColor CGColor]);
@@ -38,7 +38,7 @@
     return image;
 }
 
--(void)creatImageWithFrame:(CGRect)aFrame isCircleImage:(BOOL)isCircleImage finish:(void (^)(UIImage *image))finish {
+-(void)tta_creatImageWithFrame:(CGRect)aFrame isCircleImage:(BOOL)isCircleImage finish:(void (^)(UIImage *image))finish {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         UIGraphicsBeginImageContextWithOptions(aFrame.size, YES, [UIScreen mainScreen].scale);
         if (isCircleImage) {

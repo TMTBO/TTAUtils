@@ -11,11 +11,13 @@
 
 #import <objc/runtime.h>
 
+#import "AppDelegate+RootController.h"
+#import "AppDelegate+AppService.h"
+
 #pragma mark - Common
 #import "NSArray+Common.h"
 #import "NSDictionary+Common.h"
 #import "UIView+Common.h"
-#import "UIAlertController+Common.h"
 #import "UIColor+Common.h"
 #import "UIImage+Common.h"
 
@@ -27,6 +29,7 @@
 
 #pragma mark - Block
 #import "UIButton+Block.h"
+#import "UIAlertController+Block.h"
 
 #pragma mark - Other
 #import "TTASingleton.h"

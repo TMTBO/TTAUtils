@@ -11,19 +11,25 @@
 		5A230634B298C7864A0C9568 /* Pods_UtilsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D7E4FF1C5AB2926C09C22E /* Pods_UtilsDemoUITests.framework */; };
 		790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */; };
 		790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174C81DC790F800D87D2A /* AppDelegate+AppService.m */; };
-		790174CC1DC796F300D87D2A /* TTABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174CB1DC796F300D87D2A /* TTABaseViewController.m */; };
-		790174CF1DC7971900D87D2A /* TTABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */; };
-		790174D21DC7973D00D87D2A /* TTABaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */; };
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
 		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
-		7926A1791DC8E2E800DF4744 /* TTAMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */; };
 		792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */; };
 		792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCE1DB92CEF00FF326D /* UIColor+Common.m */; };
 		792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BD01DB92CEF00FF326D /* UIImage+Common.m */; };
 		792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BD41DB92D1C00FF326D /* NSObject+Log.m */; };
 		792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BD71DB92E4C00FF326D /* NSString+Matching.m */; };
+		792D70321DCEE99700C3E8FF /* TTABaseArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D702B1DCEE99700C3E8FF /* TTABaseArrayDataSource.m */; };
+		792D70331DCEE99700C3E8FF /* TTABaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D702D1DCEE99700C3E8FF /* TTABaseCollectionViewController.m */; };
+		792D70341DCEE99700C3E8FF /* TTABaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D702F1DCEE99700C3E8FF /* TTABaseTableViewController.m */; };
+		792D70351DCEE99700C3E8FF /* TTABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70311DCEE99700C3E8FF /* TTABaseViewController.m */; };
+		792D70381DCEE9A200C3E8FF /* TTAMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70371DCEE9A200C3E8FF /* TTAMainTabBarController.m */; };
+		792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D703A1DCEF79C00C3E8FF /* UIAlertController+Block.m */; };
+		792D703E1DCF1CA000C3E8FF /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */; };
+		792D70411DCF1DF500C3E8FF /* UIView+Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70401DCF1DF500C3E8FF /* UIView+Effect.m */; };
+		792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70431DCF2ECA00C3E8FF /* TTAViewController.m */; };
+		792D70471DCF30B800C3E8FF /* TTAViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70461DCF30B800C3E8FF /* TTAViewController2.m */; };
 		795AC74C1DB3323D00419703 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AC74B1DB3323D00419703 /* UIView+Common.m */; };
 		795AC7521DB3403900419703 /* UIViewCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AC7511DB3403900419703 /* UIViewCommon.swift */; };
 		797D21F11D8AED2800770B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D21F01D8AED2800770B72 /* main.m */; };
@@ -33,8 +39,6 @@
 		797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22091D8AED2800770B72 /* UtilsDemoTests.m */; };
 		797D22151D8AED2800770B72 /* UtilsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22141D8AED2800770B72 /* UtilsDemoUITests.m */; };
 		797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22251D8AEDB100770B72 /* UIView+Frame.m */; };
-		79AB8A8A1DCA36B600D6CECF /* TTABaseArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */; };
-		79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */; };
 		79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
@@ -69,12 +73,6 @@
 		790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootController.m"; sourceTree = "<group>"; };
 		790174C71DC790F800D87D2A /* AppDelegate+AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
 		790174C81DC790F800D87D2A /* AppDelegate+AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
-		790174CA1DC796F300D87D2A /* TTABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseViewController.h; sourceTree = "<group>"; };
-		790174CB1DC796F300D87D2A /* TTABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseViewController.m; sourceTree = "<group>"; };
-		790174CD1DC7971900D87D2A /* TTABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseTableViewController.h; sourceTree = "<group>"; };
-		790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseTableViewController.m; sourceTree = "<group>"; };
-		790174D01DC7973D00D87D2A /* TTABaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseCollectionViewController.h; sourceTree = "<group>"; };
-		790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseCollectionViewController.m; sourceTree = "<group>"; };
 		790539CD1DA61E96002EB686 /* NSArray+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Common.h"; sourceTree = "<group>"; };
 		790539CE1DA61E96002EB686 /* NSArray+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Common.m"; sourceTree = "<group>"; };
 		790539CF1DA61E96002EB686 /* NSDictionary+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
@@ -84,8 +82,6 @@
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		7926A1741DC8DD6100DF4744 /* TTACoreDataManagedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTACoreDataManagedContext.h; sourceTree = "<group>"; };
 		7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTACoreDataManagedContext.m; sourceTree = "<group>"; };
-		7926A1771DC8E2E800DF4744 /* TTAMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAMainTabBarController.h; sourceTree = "<group>"; };
-		7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAMainTabBarController.m; sourceTree = "<group>"; };
 		792B1BCA1DB92CA200FF326D /* NSString+RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExpression.h"; sourceTree = "<group>"; };
 		792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExpression.m"; sourceTree = "<group>"; };
 		792B1BCD1DB92CEF00FF326D /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
@@ -98,6 +94,26 @@
 		792B1BD71DB92E4C00FF326D /* NSString+Matching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Matching.m"; sourceTree = "<group>"; };
 		792B1BDA1DB9310800FF326D /* DefineMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
 		792B1BDB1DB9311200FF326D /* TTASingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTASingleton.h; sourceTree = "<group>"; };
+		792D702A1DCEE99700C3E8FF /* TTABaseArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseArrayDataSource.h; sourceTree = "<group>"; };
+		792D702B1DCEE99700C3E8FF /* TTABaseArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseArrayDataSource.m; sourceTree = "<group>"; };
+		792D702C1DCEE99700C3E8FF /* TTABaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseCollectionViewController.h; sourceTree = "<group>"; };
+		792D702D1DCEE99700C3E8FF /* TTABaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseCollectionViewController.m; sourceTree = "<group>"; };
+		792D702E1DCEE99700C3E8FF /* TTABaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseTableViewController.h; sourceTree = "<group>"; };
+		792D702F1DCEE99700C3E8FF /* TTABaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseTableViewController.m; sourceTree = "<group>"; };
+		792D70301DCEE99700C3E8FF /* TTABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseViewController.h; sourceTree = "<group>"; };
+		792D70311DCEE99700C3E8FF /* TTABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseViewController.m; sourceTree = "<group>"; };
+		792D70361DCEE9A200C3E8FF /* TTAMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAMainTabBarController.h; sourceTree = "<group>"; };
+		792D70371DCEE9A200C3E8FF /* TTAMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAMainTabBarController.m; sourceTree = "<group>"; };
+		792D70391DCEF79C00C3E8FF /* UIAlertController+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Block.h"; sourceTree = "<group>"; };
+		792D703A1DCEF79C00C3E8FF /* UIAlertController+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Block.m"; sourceTree = "<group>"; };
+		792D703C1DCF1CA000C3E8FF /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		792D703F1DCF1DF500C3E8FF /* UIView+Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Effect.h"; sourceTree = "<group>"; };
+		792D70401DCF1DF500C3E8FF /* UIView+Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Effect.m"; sourceTree = "<group>"; };
+		792D70421DCF2ECA00C3E8FF /* TTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAViewController.h; sourceTree = "<group>"; };
+		792D70431DCF2ECA00C3E8FF /* TTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAViewController.m; sourceTree = "<group>"; };
+		792D70451DCF30B800C3E8FF /* TTAViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAViewController2.h; sourceTree = "<group>"; };
+		792D70461DCF30B800C3E8FF /* TTAViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAViewController2.m; sourceTree = "<group>"; };
 		795AC74A1DB3323D00419703 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		795AC74B1DB3323D00419703 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		795AC7511DB3403900419703 /* UIViewCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCommon.swift; sourceTree = "<group>"; };
@@ -117,10 +133,6 @@
 		797D22161D8AED2800770B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797D22241D8AEDB100770B72 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		797D22251D8AEDB100770B72 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		79AB8A881DCA36B600D6CECF /* TTABaseArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTABaseArrayDataSource.h; sourceTree = "<group>"; };
-		79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTABaseArrayDataSource.m; sourceTree = "<group>"; };
-		79B0F7491DB66BDE002ABC72 /* UIAlertController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Common.h"; sourceTree = "<group>"; };
-		79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Common.m"; sourceTree = "<group>"; };
 		79C604AC1DCCDE56001CA4A0 /* TTATestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTATestTableViewController.h; sourceTree = "<group>"; };
 		79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTATestTableViewController.m; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -189,8 +201,8 @@
 		790174BE1DC78E6700D87D2A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				792D70281DCEE99700C3E8FF /* Base */,
 				790174BF1DC78E6700D87D2A /* Home */,
-				790174C01DC78E6700D87D2A /* Main */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,22 +212,6 @@
 			children = (
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		790174C01DC78E6700D87D2A /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				79AB8A871DCA362F00D6CECF /* DataSource */,
-				790174CA1DC796F300D87D2A /* TTABaseViewController.h */,
-				790174CB1DC796F300D87D2A /* TTABaseViewController.m */,
-				790174CD1DC7971900D87D2A /* TTABaseTableViewController.h */,
-				790174CE1DC7971900D87D2A /* TTABaseTableViewController.m */,
-				790174D01DC7973D00D87D2A /* TTABaseCollectionViewController.h */,
-				790174D11DC7973D00D87D2A /* TTABaseCollectionViewController.m */,
-				7926A1771DC8E2E800DF4744 /* TTAMainTabBarController.h */,
-				7926A1781DC8E2E800DF4744 /* TTAMainTabBarController.m */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		790174C11DC78E6700D87D2A /* Models */ = {
@@ -252,9 +248,9 @@
 				790539D01DA61E96002EB686 /* NSDictionary+Common.m */,
 				795AC74A1DB3323D00419703 /* UIView+Common.h */,
 				795AC74B1DB3323D00419703 /* UIView+Common.m */,
+				792D703C1DCF1CA000C3E8FF /* UILabel+Common.h */,
+				792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */,
 				795AC7511DB3403900419703 /* UIViewCommon.swift */,
-				79B0F7491DB66BDE002ABC72 /* UIAlertController+Common.h */,
-				79B0F74A1DB66BDE002ABC72 /* UIAlertController+Common.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -264,6 +260,8 @@
 			children = (
 				790539D51DA627C3002EB686 /* UIButton+Block.h */,
 				790539D61DA627C3002EB686 /* UIButton+Block.m */,
+				792D70391DCEF79C00C3E8FF /* UIAlertController+Block.h */,
+				792D703A1DCEF79C00C3E8FF /* UIAlertController+Block.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -275,6 +273,29 @@
 				792B1BDA1DB9310800FF326D /* DefineMacro.h */,
 			);
 			path = OtherUtils;
+			sourceTree = "<group>";
+		};
+		792D70281DCEE99700C3E8FF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				792D70291DCEE99700C3E8FF /* DataSource */,
+				792D702C1DCEE99700C3E8FF /* TTABaseCollectionViewController.h */,
+				792D702D1DCEE99700C3E8FF /* TTABaseCollectionViewController.m */,
+				792D702E1DCEE99700C3E8FF /* TTABaseTableViewController.h */,
+				792D702F1DCEE99700C3E8FF /* TTABaseTableViewController.m */,
+				792D70301DCEE99700C3E8FF /* TTABaseViewController.h */,
+				792D70311DCEE99700C3E8FF /* TTABaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		792D70291DCEE99700C3E8FF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				792D702A1DCEE99700C3E8FF /* TTABaseArrayDataSource.h */,
+				792D702B1DCEE99700C3E8FF /* TTABaseArrayDataSource.m */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		797D21E31D8AED2800770B72 = {
@@ -311,6 +332,8 @@
 				790174C51DC790CD00D87D2A /* AppDelegate+RootController.m */,
 				790174C71DC790F800D87D2A /* AppDelegate+AppService.h */,
 				790174C81DC790F800D87D2A /* AppDelegate+AppService.m */,
+				792D70361DCEE9A200C3E8FF /* TTAMainTabBarController.h */,
+				792D70371DCEE9A200C3E8FF /* TTAMainTabBarController.m */,
 				797D21FB1D8AED2800770B72 /* Assets.xcassets */,
 				797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */,
 				797D22001D8AED2800770B72 /* Info.plist */,
@@ -371,6 +394,8 @@
 				792B1BD71DB92E4C00FF326D /* NSString+Matching.m */,
 				797D22241D8AEDB100770B72 /* UIView+Frame.h */,
 				797D22251D8AEDB100770B72 /* UIView+Frame.m */,
+				792D703F1DCF1DF500C3E8FF /* UIView+Effect.h */,
+				792D70401DCF1DF500C3E8FF /* UIView+Effect.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -384,19 +409,14 @@
 			path = TTACoreDataManagedContext;
 			sourceTree = "<group>";
 		};
-		79AB8A871DCA362F00D6CECF /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				79AB8A881DCA36B600D6CECF /* TTABaseArrayDataSource.h */,
-				79AB8A891DCA36B600D6CECF /* TTABaseArrayDataSource.m */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
 		79C604AA1DCCDE56001CA4A0 /* TestClasses */ = {
 			isa = PBXGroup;
 			children = (
 				79C604AB1DCCDE56001CA4A0 /* TestTableView */,
+				792D70421DCF2ECA00C3E8FF /* TTAViewController.h */,
+				792D70431DCF2ECA00C3E8FF /* TTAViewController.m */,
+				792D70451DCF30B800C3E8FF /* TTAViewController2.h */,
+				792D70461DCF30B800C3E8FF /* TTAViewController2.m */,
 			);
 			path = TestClasses;
 			sourceTree = "<group>";
@@ -710,30 +730,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */,
+				792D703E1DCF1CA000C3E8FF /* UILabel+Common.m in Sources */,
 				792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */,
-				79AB8A8A1DCA36B600D6CECF /* TTABaseArrayDataSource.m in Sources */,
+				792D70381DCEE9A200C3E8FF /* TTAMainTabBarController.m in Sources */,
 				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
+				792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,
 				790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */,
+				792D70341DCEE99700C3E8FF /* TTABaseTableViewController.m in Sources */,
 				790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */,
 				792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */,
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
-				790174CC1DC796F300D87D2A /* TTABaseViewController.m in Sources */,
-				7926A1791DC8E2E800DF4744 /* TTAMainTabBarController.m in Sources */,
 				790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */,
-				790174D21DC7973D00D87D2A /* TTABaseCollectionViewController.m in Sources */,
+				792D70471DCF30B800C3E8FF /* TTAViewController2.m in Sources */,
+				792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */,
 				7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */,
+				792D70331DCEE99700C3E8FF /* TTABaseCollectionViewController.m in Sources */,
+				792D70321DCEE99700C3E8FF /* TTABaseArrayDataSource.m in Sources */,
 				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
-				79B0F74B1DB66BDE002ABC72 /* UIAlertController+Common.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,
 				792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */,
 				79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */,
-				790174CF1DC7971900D87D2A /* TTABaseTableViewController.m in Sources */,
 				792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */,
 				797D21F11D8AED2800770B72 /* main.m in Sources */,
+				792D70351DCEE99700C3E8FF /* TTABaseViewController.m in Sources */,
 				795AC74C1DB3323D00419703 /* UIView+Common.m in Sources */,
 				795AC7521DB3403900419703 /* UIViewCommon.swift in Sources */,
+				792D70411DCF1DF500C3E8FF /* UIView+Effect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
