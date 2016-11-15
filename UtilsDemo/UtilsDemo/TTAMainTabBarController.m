@@ -8,6 +8,7 @@
 
 #import "TTAMainTabBarController.h"
 #import "TTATestTableViewController.h"
+#import "TTAViewController.h"
 
 @interface TTAMainTabBarController ()
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = kWHITE_COLOR;
+    
     [self setTabbarController];
 }
 
@@ -25,11 +28,11 @@
  *  tabbar实例
  */
 - (void)setTabbarController {
-//    TTABaseViewController *baseVc = [[TTABaseViewController alloc] init];
+    TTAViewController *baseVc = [[TTAViewController alloc] init];
     TTATestTableViewController *testTableVc = [[TTATestTableViewController alloc] init];
 //    TTABaseCollectionViewController *baseCollectionVc = [[TTABaseCollectionViewController alloc] init];
     
-//    [self configChildViewController:baseVc title:@"baseVc" imageName:nil];
+    [self configChildViewController:baseVc title:@"baseVc" imageName:nil];
     [self configChildViewController:testTableVc title:@"testTableVc" imageName:nil];
 //    [self configChildViewController:baseCollectionVc title:@"baseCollectionVc" imageName:nil];
 }

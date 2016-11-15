@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^TTATapBlock)(UITapGestureRecognizer *tapGesture);
+
 @interface UIView (Common)
 #pragma mark - 圆角相关
 /**
@@ -41,5 +43,12 @@
  @param radius  圆角半径
  */
 - (void)tta_cornerWithRoundedRect:(CGRect)rect byRoundingCorner:(UIRectCorner)corners cornerRadius:(CGFloat)radius;
+
+/**
+ 为一个 uiview 添加点击手势
+
+ @param tapBlock 点击处理 block
+ */
+- (void)tta_addTapGestureWithBlock:(TTATapBlock)tapBlock;
 
 @end

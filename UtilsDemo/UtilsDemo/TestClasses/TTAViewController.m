@@ -25,7 +25,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setupUI {
+    
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
+/** uiview 添加手势方法测试 */
+- (void)testViewAddTapGesture {
+    UIView *testView = [[UIView alloc] init];
+    testView.chain_x(self.view.center.x).chain_y(0).chain_size(CGSizeMake(100, 100));
+    testView.backgroundColor = kORANGE_COLOR;
+    [testView tta_addTapGestureWithBlock:^(UITapGestureRecognizer *tapGesture) {
+        NSLog(@"come here");
+    }];
+    [self.view addSubview:testView];
+}
+/** AppDelegate 中中转方法测试 */
+- (void)push2AnotherController {
     TTATestTableViewController *Vc = [[TTATestTableViewController alloc] init];
     [self addChildViewController:Vc];
     [[AppDelegate sharedAppDelegate] pushViewController:Vc];

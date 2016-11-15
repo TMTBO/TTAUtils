@@ -14,6 +14,7 @@
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
+		79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */; };
 		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
 		792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */; };
 		792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCE1DB92CEF00FF326D /* UIColor+Common.m */; };
@@ -80,6 +81,8 @@
 		790539D41DA61F5B002EB686 /* GlobalUtils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.pch; sourceTree = "<group>"; };
 		790539D51DA627C3002EB686 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Common.h"; sourceTree = "<group>"; };
+		79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Common.m"; sourceTree = "<group>"; };
 		7926A1741DC8DD6100DF4744 /* TTACoreDataManagedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTACoreDataManagedContext.h; sourceTree = "<group>"; };
 		7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTACoreDataManagedContext.m; sourceTree = "<group>"; };
 		792B1BCA1DB92CA200FF326D /* NSString+RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExpression.h"; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				795AC74B1DB3323D00419703 /* UIView+Common.m */,
 				792D703C1DCF1CA000C3E8FF /* UILabel+Common.h */,
 				792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */,
+				79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */,
+				79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */,
 				795AC7511DB3403900419703 /* UIViewCommon.swift */,
 			);
 			path = Common;
@@ -747,6 +752,7 @@
 				792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */,
 				7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */,
 				792D70331DCEE99700C3E8FF /* TTABaseCollectionViewController.m in Sources */,
+				79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */,
 				792D70321DCEE99700C3E8FF /* TTABaseArrayDataSource.m in Sources */,
 				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,

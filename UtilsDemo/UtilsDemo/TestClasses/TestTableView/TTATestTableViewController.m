@@ -10,6 +10,8 @@
 #import "TTABaseArrayDataSource.h"
 #import "TTAViewController.h"
 
+#import "TTAWebViewController.h"
+
 @interface TTATestTableViewController ()
 
 @end
@@ -27,7 +29,7 @@
 }
 
 - (void)getData {
-    [_baseArrayDataSource setView:_tableView withItems:@[@"heh", @"haha", @"heihei", @"hafdo"]];
+    [_baseArrayDataSource setView:_tableView withItems:@[@"heh", @"haha", @"heihei", @"hafdo",@"测试 webview"]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,6 +51,11 @@
     } else if (indexPath.row == 3) {
         [[AppDelegate sharedAppDelegate] popToViewControllerWithindex:5];
         return;
+    } else if (indexPath.row == 4) {
+        TTAWebViewController *webVc = [[TTAWebViewController alloc] init];
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPay.html" ofType:nil];
+        webVc.urlString = @"https://www.baidu.com";
+        Vc = webVc;
     }
     
     Vc.title = [NSString stringWithFormat:@"%zd", idx];

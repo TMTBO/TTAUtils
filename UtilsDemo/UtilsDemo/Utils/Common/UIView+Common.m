@@ -8,6 +8,12 @@
 
 #import "UIView+Common.h"
 
+static const void *kTAP_GESTURE = &kTAP_GESTURE;
+
+@interface UIView ()
+
+@end
+
 @implementation UIView (Common)
 #pragma mark - 圆角相关
 /**
@@ -56,6 +62,22 @@
     maskLayer.frame = self.bounds;
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
+}
+
+#pragma mark - 手势相关
+- (void)tta_addTapGestureWithBlock:(TTATapBlock)tapBlock {
+    objc_setAssociatedObject(self, kTAP_GESTURE, tapBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 1;
+    [self addGestureRecognizer:tap];
+}
+
+- (void)tapGestureAction:(UITapGestureRecognizer *)tap {
+    TTATapBlock tapBlock = objc_getAssociatedObject(self, kTAP_GESTURE);
+    if (tapBlock) {
+        tapBlock(tap);
+    }
 }
 
 @end
