@@ -35,6 +35,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     
+
+}
+
+/** 测试 AppDelegate 方法中的控制器跳转方法 */
+- (void)testJumpVcWith:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         [[AppDelegate sharedAppDelegate] popToViewControllerWithClass:[TTAViewController class]];
         return;
@@ -53,7 +58,7 @@
         return;
     } else if (indexPath.row == 4) {
         TTAWebViewController *webVc = [[TTAWebViewController alloc] init];
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPay.html" ofType:nil];
+        //        NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPay.html" ofType:nil];
         webVc.urlString = @"https://www.baidu.com";
         Vc = webVc;
     }
