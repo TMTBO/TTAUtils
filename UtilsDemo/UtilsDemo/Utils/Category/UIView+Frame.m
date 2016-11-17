@@ -106,6 +106,74 @@
     self.bounds = boundsRect;
 }
 
+- (CGPoint)tta_center {
+    return self.center;
+}
+- (void)setTta_center:(CGPoint)tta_center {
+    self.center = tta_center;
+}
+
+- (CGFloat)tta_centerX {
+    return self.center.x;
+}
+- (void)setTta_centerX:(CGFloat)tta_centerX {
+    CGPoint center = self.center;
+    center.x = tta_centerX;
+    self.center = center;
+}
+
+- (CGFloat)tta_centerY {
+    return self.center.y;
+}
+- (void)setTta_centerY:(CGFloat)tta_centerY {
+    CGPoint center = self.center;
+    center.y = tta_centerY;
+    self.center = center;
+}
+
+- (CGRect)tta_bounds {
+    return self.bounds;
+}
+- (void)setTta_bounds:(CGRect)tta_bounds {
+    self.bounds = tta_bounds;
+}
+
+- (CGRect)tta_frame {
+    return self.frame;
+}
+- (void)setTta_frame:(CGRect)tta_frame {
+    self.frame = tta_frame;
+}
+
+- (CGFloat)tta_top {
+    return self.tta_y;
+}
+- (void)setTta_top:(CGFloat)tta_top {
+    self.frame = CGRectMake(self.tta_left, tta_top, self.tta_width, self.tta_height);
+}
+
+- (CGFloat)tta_bottom {
+    return self.tta_y + self.tta_height;
+}
+- (void)setTta_bottom:(CGFloat)tta_bottom {
+    self.frame = CGRectMake(self.tta_left, tta_bottom - self.tta_height, self.tta_width, self.tta_height);
+}
+
+- (CGFloat)tta_left {
+    return self.tta_x;
+}
+- (void)setTta_left:(CGFloat)tta_left {
+    self.frame = CGRectMake(tta_left, self.tta_top, self.tta_width, self.tta_height);
+}
+
+- (CGFloat)tta_right {
+    return self.tta_x + self.tta_width;
+}
+- (void)setTta_right:(CGFloat)tta_right {
+    self.frame = CGRectMake(tta_right - self.tta_width, self.tta_top, self.tta_width, self.tta_height);
+}
+
+/*==================== Block链式 ========================*/
 #pragma mark - Block链式
 - (UIView * (^)(CGFloat))chain_x {
     return ^(CGFloat newX){

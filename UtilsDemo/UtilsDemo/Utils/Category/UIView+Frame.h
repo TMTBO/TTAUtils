@@ -10,12 +10,25 @@
 
 @interface UIView (Frame)
 
-@property CGFloat tta_x;
-@property CGFloat tta_y;
-@property CGFloat tta_width;
-@property CGFloat tta_height;
-@property CGPoint tta_origin;
-@property CGSize tta_size;
+@property (nonatomic, assign) CGFloat tta_x;
+@property (nonatomic, assign) CGFloat tta_y;
+@property (nonatomic, assign) CGFloat tta_width;
+@property (nonatomic, assign) CGFloat tta_height;
+
+@property (nonatomic, assign) CGPoint tta_origin;
+@property (nonatomic, assign) CGSize tta_size;
+
+@property (nonatomic, assign) CGPoint tta_center;
+@property (nonatomic, assign) CGFloat tta_centerX;
+@property (nonatomic, assign) CGFloat tta_centerY;
+
+@property (nonatomic, assign) CGRect tta_frame;
+@property (nonatomic, assign) CGRect tta_bounds;
+
+@property (nonatomic, assign) CGFloat tta_top;
+@property (nonatomic, assign) CGFloat tta_bottom;
+@property (nonatomic, assign) CGFloat tta_left;
+@property (nonatomic, assign) CGFloat tta_right;
 
 /// 链式调用设置viewframe相关属性
 - (UIView * (^)(CGFloat))chain_x;
@@ -24,5 +37,10 @@
 - (UIView * (^)(CGFloat))chain_height;
 - (UIView * (^)(CGPoint))chain_origin;
 - (UIView * (^)(CGSize))chain_size;
+
+- (UIView * (^)(CGFloat))chain_top;
+- (UIView * (^)(CGFloat))chain_bottom;
+- (UIView * (^)(CGFloat))chain_left;
+- (UIView * (^)(CGFloat))chain_right;
 
 @end
