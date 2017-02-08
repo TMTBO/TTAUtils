@@ -38,9 +38,9 @@
 - (UIView * (^)(CGPoint))chain_origin;
 - (UIView * (^)(CGSize))chain_size;
 
-- (UIView * (^)(CGFloat))chain_top;
-- (UIView * (^)(CGFloat))chain_bottom;
-- (UIView * (^)(CGFloat))chain_left;
-- (UIView * (^)(CGFloat))chain_right;
+//- (UIView * (^)(CGFloat))chain_top;
+//- (UIView * (^)(CGFloat))chain_bottom;
+//- (UIView * (^)(CGFloat))chain_left;
+//- (UIView * (^)(CGFloat))chain_right;
 
 @end

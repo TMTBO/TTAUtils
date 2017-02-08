@@ -64,9 +64,9 @@
  获取数据
  */
 - (void)getData {
+    NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
     NSArray *items = @[kRED_COLOR, kBLUE_COLOR, kBLACK_COLOR, kORANGE_COLOR, kLIGHT_GRAY_COLOR, kDARK_GRAY_COLOR, kGRAY_COLOR];
     [_baseArrayDataSource setView:_collectionView withItems:items];
-    NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
 }
 
 #pragma mark - UICollectionViewDelegate

@@ -44,6 +44,8 @@
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
 		79C960E91DB9D6C800A28335 /* TestPay.html in Resources */ = {isa = PBXBuildFile; fileRef = 79C960E81DB9D6C800A28335 /* TestPay.html */; };
+		79F4CD391E4B55000038D915 /* TTAHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F4CD381E4B55000038D915 /* TTAHUD.m */; };
+		79F4CD3C1E4B5F8D0038D915 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F4CD3B1E4B5F8D0038D915 /* NSString+Common.m */; };
 		87B4979297EDEEFFDE58D9C8 /* Pods_UtilsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C061EF37805FF7E9CDF40E /* Pods_UtilsDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +145,11 @@
 		79C960E41DB9D67E00A28335 /* ZLCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCWebView.h; sourceTree = "<group>"; };
 		79C960E51DB9D67E00A28335 /* ZLCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCWebView.m; sourceTree = "<group>"; };
 		79C960E81DB9D6C800A28335 /* TestPay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestPay.html; sourceTree = "<group>"; };
+		79F4CD371E4B55000038D915 /* TTAHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAHUD.h; sourceTree = "<group>"; };
+		79F4CD381E4B55000038D915 /* TTAHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAHUD.m; sourceTree = "<group>"; };
+		79F4CD3A1E4B5F8D0038D915 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		79F4CD3B1E4B5F8D0038D915 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		79F4CD3D1E4B655D0038D915 /* ConstConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstConfig.h; sourceTree = "<group>"; };
 		7BF6E0A3D6CF2FB1AE7CF09D /* Pods-UtilsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilsDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UtilsDemoTests/Pods-UtilsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FDECACC294CD6F7461E8FEF /* Pods-UtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UtilsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UtilsDemo/Pods-UtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D7E4FF1C5AB2926C09C22E /* Pods_UtilsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UtilsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +263,8 @@
 				79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */,
 				79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */,
 				795AC7511DB3403900419703 /* UIViewCommon.swift */,
+				79F4CD3A1E4B5F8D0038D915 /* NSString+Common.h */,
+				79F4CD3B1E4B5F8D0038D915 /* NSString+Common.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,6 +285,7 @@
 			children = (
 				792B1BDB1DB9311200FF326D /* TTASingleton.h */,
 				792B1BDA1DB9310800FF326D /* DefineMacro.h */,
+				79F4CD3D1E4B655D0038D915 /* ConstConfig.h */,
 			);
 			path = OtherUtils;
 			sourceTree = "<group>";
@@ -449,10 +459,20 @@
 		79EBC6DF1DB9D3F100790196 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				79F4CD361E4B516F0038D915 /* TTAHUD */,
 				797F48261DC0FAA4004996EF /* TTACoreDataManagedContext */,
 				79C960E11DB9D67E00A28335 /* TTAWebViewController */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		79F4CD361E4B516F0038D915 /* TTAHUD */ = {
+			isa = PBXGroup;
+			children = (
+				79F4CD371E4B55000038D915 /* TTAHUD.h */,
+				79F4CD381E4B55000038D915 /* TTAHUD.m */,
+			);
+			path = TTAHUD;
 			sourceTree = "<group>";
 		};
 		CC8370C31AF5AF7AA192473C /* Frameworks */ = {
@@ -518,6 +538,7 @@
 				797D220D1D8AED2800770B72 /* Frameworks */,
 				797D220E1D8AED2800770B72 /* Resources */,
 				D8437D0DBEA127BEB5BFC83E /* [CP] Copy Pods Resources */,
+				9785104D9259D72552353A4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -619,7 +640,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4543405DE29BACCEE4F45A91 /* [CP] Check Pods Manifest.lock */ = {
@@ -634,7 +655,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		470B8E81B7D46A4FF2B92400 /* [CP] Check Pods Manifest.lock */ = {
@@ -649,7 +670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		64A01C165F96F4F7209EB76B /* [CP] Copy Pods Resources */ = {
@@ -665,6 +686,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UtilsDemo/Pods-UtilsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9785104D9259D72552353A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UtilsDemoUITests/Pods-UtilsDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9C1ACF784A1EDABAFCCECB75 /* [CP] Embed Pods Frameworks */ = {
@@ -749,6 +785,7 @@
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
 				790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */,
 				792D70471DCF30B800C3E8FF /* TTAViewController2.m in Sources */,
+				79F4CD391E4B55000038D915 /* TTAHUD.m in Sources */,
 				792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */,
 				7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */,
 				792D70331DCEE99700C3E8FF /* TTABaseCollectionViewController.m in Sources */,
@@ -757,6 +794,7 @@
 				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,
 				792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */,
+				79F4CD3C1E4B5F8D0038D915 /* NSString+Common.m in Sources */,
 				79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */,
 				792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */,
 				797D21F11D8AED2800770B72 /* main.m in Sources */,

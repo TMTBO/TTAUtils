@@ -7,6 +7,8 @@ target 'UtilsDemo' do
 
   # Pods for UtilsDemo
 pod 'MJRefresh'
+pod 'MBProgressHUD'
+
   target 'UtilsDemoTests' do
     inherit! :search_paths
     # Pods for testing

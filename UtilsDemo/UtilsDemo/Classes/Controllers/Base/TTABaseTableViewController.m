@@ -61,9 +61,9 @@
 
 #pragma mark - Data
 - (void)getData {
+    NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
     NSArray *items = @[@"Please rewrite `-(void)getData;`"];
     [_baseArrayDataSource setView:_tableView withItems:items];
-    NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
 }
 
 #pragma mark - UITableViewDelegate
