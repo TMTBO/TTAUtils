@@ -14,6 +14,7 @@
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
+		79214DA21E4ACB8F0085041A /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79214DA11E4ACB8F0085041A /* UILabel+Common.m */; };
 		79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */; };
 		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
 		792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */; };
@@ -27,7 +28,6 @@
 		792D70351DCEE99700C3E8FF /* TTABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70311DCEE99700C3E8FF /* TTABaseViewController.m */; };
 		792D70381DCEE9A200C3E8FF /* TTAMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70371DCEE9A200C3E8FF /* TTAMainTabBarController.m */; };
 		792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D703A1DCEF79C00C3E8FF /* UIAlertController+Block.m */; };
-		792D703E1DCF1CA000C3E8FF /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */; };
 		792D70411DCF1DF500C3E8FF /* UIView+Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70401DCF1DF500C3E8FF /* UIView+Effect.m */; };
 		792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70431DCF2ECA00C3E8FF /* TTAViewController.m */; };
 		792D70471DCF30B800C3E8FF /* TTAViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 792D70461DCF30B800C3E8FF /* TTAViewController2.m */; };
@@ -81,6 +81,8 @@
 		790539D41DA61F5B002EB686 /* GlobalUtils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.pch; sourceTree = "<group>"; };
 		790539D51DA627C3002EB686 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		79214DA01E4ACB8F0085041A /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		79214DA11E4ACB8F0085041A /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
 		79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Common.h"; sourceTree = "<group>"; };
 		79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Common.m"; sourceTree = "<group>"; };
 		7926A1741DC8DD6100DF4744 /* TTACoreDataManagedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTACoreDataManagedContext.h; sourceTree = "<group>"; };
@@ -109,8 +111,6 @@
 		792D70371DCEE9A200C3E8FF /* TTAMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAMainTabBarController.m; sourceTree = "<group>"; };
 		792D70391DCEF79C00C3E8FF /* UIAlertController+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Block.h"; sourceTree = "<group>"; };
 		792D703A1DCEF79C00C3E8FF /* UIAlertController+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Block.m"; sourceTree = "<group>"; };
-		792D703C1DCF1CA000C3E8FF /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
-		792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
 		792D703F1DCF1DF500C3E8FF /* UIView+Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Effect.h"; sourceTree = "<group>"; };
 		792D70401DCF1DF500C3E8FF /* UIView+Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Effect.m"; sourceTree = "<group>"; };
 		792D70421DCF2ECA00C3E8FF /* TTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAViewController.h; sourceTree = "<group>"; };
@@ -249,10 +249,10 @@
 				790539CE1DA61E96002EB686 /* NSArray+Common.m */,
 				790539CF1DA61E96002EB686 /* NSDictionary+Common.h */,
 				790539D01DA61E96002EB686 /* NSDictionary+Common.m */,
+				79214DA01E4ACB8F0085041A /* UILabel+Common.h */,
+				79214DA11E4ACB8F0085041A /* UILabel+Common.m */,
 				795AC74A1DB3323D00419703 /* UIView+Common.h */,
 				795AC74B1DB3323D00419703 /* UIView+Common.m */,
-				792D703C1DCF1CA000C3E8FF /* UILabel+Common.h */,
-				792D703D1DCF1CA000C3E8FF /* UILabel+Common.m */,
 				79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */,
 				79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */,
 				795AC7511DB3403900419703 /* UIViewCommon.swift */,
@@ -735,9 +735,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */,
-				792D703E1DCF1CA000C3E8FF /* UILabel+Common.m in Sources */,
 				792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */,
 				792D70381DCEE9A200C3E8FF /* TTAMainTabBarController.m in Sources */,
+				79214DA21E4ACB8F0085041A /* UILabel+Common.m in Sources */,
 				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
 				792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,

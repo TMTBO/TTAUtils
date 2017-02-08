@@ -47,17 +47,15 @@
 
 - (void)goLogin;
 
-/**
- *  状态栏
- */
+/** 状态栏 */
 - (void)initStatusBar;
 
 - (void)showStatusBarWithTitle:(NSString *)title;
 
 - (void)changeStatusBarTitle:(NSString *)title;
 - (void)hiddenStatusBar;
-/**  重新配置 NavigateionBar 的返回按钮,如果需要,用户重写此方法即可  */
+/** 重新配置 NavigateionBar 的返回按钮,如果需要,用户重写此方法即可 */
 - (void)reconfigureLeftItem;
-/**  对于界面上有输入框的，可以选择性调用些方法进行收起键盘  */
+/** 对于界面上有输入框的，可以选择性调用些方法进行收起键盘 */
 - (void)addTapBlankToHideKeyboardGesture;
 @end
