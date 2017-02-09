@@ -36,7 +36,7 @@
 }
 
 - (void)prepareTableView {
-    _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithItems:nil cellIdentifer:CellIdentifier configureCellBlock:^(id cell, id item) {
+    _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithGroups:nil cellIdentifer:CellIdentifier configureCellBlock:^(id cell, id item) {
         UITableViewCell *aCell = (UITableViewCell *)cell;
         aCell.textLabel.text = item;
     }];
@@ -63,7 +63,7 @@
 - (void)getData {
     NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
     NSArray *items = @[@"Please rewrite `-(void)getData;`"];
-    [_baseArrayDataSource setView:_tableView withItems:items];
+    [_baseArrayDataSource setView:_tableView withGroups:items];
 }
 
 #pragma mark - UITableViewDelegate

@@ -7,7 +7,6 @@
 //
 
 #import "TTAHUD.h"
-#import "MBProgressHUD.h"
 
 @interface TTAHUD () {
     MBProgressHUD *_syncHUD;
@@ -41,15 +40,12 @@
 }
 
 - (MBProgressHUD *)loading:(NSString *)msg inView:(UIView *)aView {
-//    UIView *inView = aView ? aView : [AppDelegate sharedAppDelegate].window;
-//    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:inView];
     MBProgressHUD *hud = [self getHUDInView:aView];
     dispatch_async(dispatch_get_main_queue(), ^{
         if (![msg isEmpty]) {
             hud.mode = MBProgressHUDModeIndeterminate;
             hud.label.text = msg;
         }
-//        [inView addSubview:hud];
         [hud showAnimated:YES];
         [hud hideAnimated:YES afterDelay:kRequestTimeOutTime];
     });
@@ -89,14 +85,14 @@
 // MARK:- Stop Loading
 
 - (void)stopLoading:(MBProgressHUD *)hud {
-    [self stopLoading:hud message:nil];
+    [self stopLoading:hud message:nil delay:0 completionHandler:nil];
 }
 
 - (void)stopLoading:(MBProgressHUD *)hud message:(NSString *)msg {
-    [self stopLoadig:hud message:msg delay:0 completionHandler:nil];
+    [self stopLoading:hud message:msg delay:1.f completionHandler:nil];
 }
 
-- (void)stopLoadig:(MBProgressHUD *)hud message:(NSString *)msg delay:(CGFloat)aDelay completionHandler:(dispatch_block_t)completionHandler {
+- (void)stopLoading:(MBProgressHUD *)hud message:(NSString *)msg delay:(CGFloat)aDelay completionHandler:(dispatch_block_t)completionHandler {
     if (hud && hud.superview) {
         dispatch_async(dispatch_get_main_queue(), ^{
             if (![msg isEmpty]) {
@@ -197,7 +193,7 @@ static const NSInteger kSyncHUDStartTag = 100000;
             _syncHUD.label.text = nil;
         }
     } else {
-        [self stopLoadig:_syncHUD message:msg delay:aDelay completionHandler:completionHandler];
+        [self stopLoading:_syncHUD message:msg delay:aDelay completionHandler:completionHandler];
     }
 }
 

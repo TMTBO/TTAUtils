@@ -7,6 +7,7 @@
 //
 
 #import "TTABaseViewController.h"
+#import "TTABaseArrayDataSource.h"
 
 @interface TTABaseCollectionViewController : TTABaseViewController <UICollectionViewDelegate>
 

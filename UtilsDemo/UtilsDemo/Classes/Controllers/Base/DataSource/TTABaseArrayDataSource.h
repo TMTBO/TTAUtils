@@ -12,9 +12,9 @@ typedef void (^TTAConfigureCellBlock)(id cell, id item);
 
 @interface TTABaseArrayDataSource : NSObject <UITableViewDataSource, UICollectionViewDataSource>
 
-+ (instancetype)arrayDataSourceWithItems:(NSArray *)anItems cellIdentifer:(NSString *)aCellIdentifer configureCellBlock:(TTAConfigureCellBlock)aConfigureCellBlock;
++ (instancetype)arrayDataSourceWithGroups:(NSArray *)aGroups cellIdentifer:(NSString *)aCellIdentifer configureCellBlock:(TTAConfigureCellBlock)aConfigureCellBlock;
 
-- (instancetype)initWithItems:(NSArray *)anItems cellIdentifer:(NSString *)aCellIdentifer configureCellBlock:(TTAConfigureCellBlock)aConfigureCellBlock;
+- (instancetype)initWithGroups:(NSArray *)aGroups cellIdentifer:(NSString *)aCellIdentifer configureCellBlock:(TTAConfigureCellBlock)aConfigureCellBlock;
 
 /**
  获取数据源中对应数据
@@ -25,8 +25,8 @@ typedef void (^TTAConfigureCellBlock)(id cell, id item);
  设置数据源的数据数组,设置完成后自动刷新
  
  @param aView 数据源作用的 tableView 或者 collectionView
- @param items 数据数组
+ @param groups 数据数组
  */
-- (void)setView:(id)aView withItems:(NSArray *)items;
+- (void)setView:(id)aView withGroups:(NSArray *)groups;
 
 @end

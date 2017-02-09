@@ -7,8 +7,8 @@
 //
 
 #import "TTATestTableViewController.h"
-#import "TTABaseArrayDataSource.h"
 #import "TTAViewController.h"
+#import "TTAHUDTestTableViewController.h"
 
 #import "TTAWebViewController.h"
 
@@ -29,7 +29,7 @@
 }
 
 - (void)getData {
-    [_baseArrayDataSource setView:_tableView withItems:@[@"heh", @"haha", @"heihei", @"hafdo",@"测试 webview"]];
+    [_baseArrayDataSource setView:_tableView withGroups:@[@[@"heh", @"haha", @"heihei", @"hafdo",@"测试 webview", @"TTAHUD Test"]]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,6 +62,10 @@
 //        self.navigationController.navigationBar.hidden = YES;
         webVc.urlString = @"https://www.baidu.com";
         Vc = webVc;
+    } else if (indexPath.row == 5) {
+        Vc = [[TTAHUDTestTableViewController alloc] init];
+    } else {
+        NSAssert(YES, @"Please add the action of the item at: %zd section %zd row", indexPath.section, indexPath.row);
     }
     
     Vc.title = [NSString stringWithFormat:@"%zd", idx];

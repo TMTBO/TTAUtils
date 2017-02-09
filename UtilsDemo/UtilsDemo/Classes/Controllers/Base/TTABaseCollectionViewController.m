@@ -7,7 +7,6 @@
 //
 
 #import "TTABaseCollectionViewController.h"
-#import "TTABaseArrayDataSource.h"
 
 #define CellIdentifer @"cell"
 
@@ -38,7 +37,7 @@
 }
 
 - (void)prepareCollectionView {
-    _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithItems:nil cellIdentifer:CellIdentifer configureCellBlock:^(id cell, id item) {
+    _baseArrayDataSource = [TTABaseArrayDataSource arrayDataSourceWithGroups:nil cellIdentifer:CellIdentifer configureCellBlock:^(id cell, id item) {
         UICollectionViewCell *aCell = (UICollectionViewCell *)cell;
         aCell.backgroundColor = item;
     }];
@@ -66,7 +65,7 @@
 - (void)getData {
     NSAssert(NO, @"Please rewrite `-(void)getData`; and DO NOT call [super getData]");
     NSArray *items = @[kRED_COLOR, kBLUE_COLOR, kBLACK_COLOR, kORANGE_COLOR, kLIGHT_GRAY_COLOR, kDARK_GRAY_COLOR, kGRAY_COLOR];
-    [_baseArrayDataSource setView:_collectionView withItems:items];
+    [_baseArrayDataSource setView:_collectionView withGroups:items];
 }
 
 #pragma mark - UICollectionViewDelegate

@@ -7,10 +7,9 @@
 //
 
 #import "TTABaseViewController.h"
+#import "TTABaseArrayDataSource.h"
 
-@class TTABaseArrayDataSource;
-
-@interface TTABaseTableViewController : TTABaseViewController <UITableViewDelegate>{
+@interface TTABaseTableViewController : TTABaseViewController <UITableViewDelegate> {
     UITableView *_tableView;
     /**
      *  数据源

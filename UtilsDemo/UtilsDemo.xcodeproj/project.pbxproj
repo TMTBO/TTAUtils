@@ -14,6 +14,8 @@
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
+		7912DE8A1E4C004F007307F6 /* TTAHUDTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */; };
+		7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */; };
 		79214DA21E4ACB8F0085041A /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79214DA11E4ACB8F0085041A /* UILabel+Common.m */; };
 		79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */; };
 		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
@@ -83,6 +85,9 @@
 		790539D41DA61F5B002EB686 /* GlobalUtils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.pch; sourceTree = "<group>"; };
 		790539D51DA627C3002EB686 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		7912DE881E4C004F007307F6 /* TTAHUDTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAHUDTestTableViewController.h; sourceTree = "<group>"; };
+		7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAHUDTestTableViewController.m; sourceTree = "<group>"; };
+		7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TTAHUDIcon.bundle; sourceTree = "<group>"; };
 		79214DA01E4ACB8F0085041A /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
 		79214DA11E4ACB8F0085041A /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
 		79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Common.h"; sourceTree = "<group>"; };
@@ -441,6 +446,8 @@
 			children = (
 				79C604AC1DCCDE56001CA4A0 /* TTATestTableViewController.h */,
 				79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */,
+				7912DE881E4C004F007307F6 /* TTAHUDTestTableViewController.h */,
+				7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */,
 			);
 			path = TestTableView;
 			sourceTree = "<group>";
@@ -469,6 +476,7 @@
 		79F4CD361E4B516F0038D915 /* TTAHUD */ = {
 			isa = PBXGroup;
 			children = (
+				7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */,
 				79F4CD371E4B55000038D915 /* TTAHUD.h */,
 				79F4CD381E4B55000038D915 /* TTAHUD.m */,
 			);
@@ -605,6 +613,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */,
 				797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */,
 				79C960E91DB9D6C800A28335 /* TestPay.html in Resources */,
 				797D21FC1D8AED2800770B72 /* Assets.xcassets in Resources */,
@@ -780,6 +789,7 @@
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,
 				790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */,
 				792D70341DCEE99700C3E8FF /* TTABaseTableViewController.m in Sources */,
+				7912DE8A1E4C004F007307F6 /* TTAHUDTestTableViewController.m in Sources */,
 				790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */,
 				792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */,
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
