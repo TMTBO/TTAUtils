@@ -42,7 +42,7 @@
 - (MBProgressHUD *)loading:(NSString *)msg inView:(UIView *)aView {
     MBProgressHUD *hud = [self getHUDInView:aView];
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (![msg isEmpty]) {
+        if (!msg.empty) {
             hud.mode = MBProgressHUDModeIndeterminate;
             hud.label.text = msg;
         }
@@ -53,9 +53,9 @@
 }
 
 - (void)loading:(NSString *)msg delay:(CGFloat)aDelay execute:(dispatch_block_t)exec completionHandler:(dispatch_block_t)completionHandler {
-    MBProgressHUD *hud = [self getHUDInView:[AppDelegate sharedAppDelegate].window];
+    MBProgressHUD *hud = [self getHUDInView:nil];
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (![msg isEmpty]) {
+        if (!msg.empty) {
             hud.mode = MBProgressHUDModeText;
             hud.label.text = msg;
         }
@@ -95,7 +95,7 @@
 - (void)stopLoading:(MBProgressHUD *)hud message:(NSString *)msg delay:(CGFloat)aDelay completionHandler:(dispatch_block_t)completionHandler {
     if (hud && hud.superview) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (![msg isEmpty]) {
+            if (!msg.empty) {
                 hud.mode = MBProgressHUDModeText;
                 hud.label.text = msg;
             }
@@ -124,7 +124,7 @@
 }
 
 - (void)tipMessage:(NSString *)msg delay:(CGFloat)aDelay completionHandler:(dispatch_block_t)completionHandler {
-    if ([msg isEmpty]) {
+    if (msg.empty) {
         return;
     }
     
@@ -158,7 +158,7 @@ static const NSInteger kSyncHUDStartTag = 100000;
 - (void)syncLoading:(NSString *)msg inView:(UIView *)aView {
     if (_syncHUD) {
         _syncHUD.tag++;
-        if (![msg isEmpty]) {
+        if (!msg.empty) {
             _syncHUD.mode = MBProgressHUDModeText;
             _syncHUD.label.text = msg;
         } else {
@@ -185,7 +185,7 @@ static const NSInteger kSyncHUDStartTag = 100000;
 - (void)syncStopLoadingMessage:(NSString *)msg delay:(CGFloat)aDelay completionHandler:(dispatch_block_t)completionHandler {
     _syncHUD.tag--;
     if (_syncHUD.tag > kSyncHUDStartTag) {
-        if (![msg isEmpty]) {
+        if (!msg.empty) {
             _syncHUD.mode = MBProgressHUDModeText;
             _syncHUD.label.text = msg;
         } else {

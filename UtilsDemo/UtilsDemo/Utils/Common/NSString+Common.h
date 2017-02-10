@@ -10,8 +10,7 @@
 
 @interface NSString (Common)
 
-
-/** 判断字符串是否为空或者长度为 0 */
-- (BOOL)isEmpty;
+/** 判断当前字符串是否为 nil 或者 长度为 0 */
+@property (nonatomic, assign, readonly, getter=isEmpty) BOOL empty;
 
 @end

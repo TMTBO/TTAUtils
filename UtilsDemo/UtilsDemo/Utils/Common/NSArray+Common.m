@@ -8,17 +8,7 @@
 
 #import "NSArray+Common.h"
 
-static const void *kEMPTY;
-
 @implementation NSArray (Common)
-
--(void)setEmpty:(BOOL)empty {
-    objc_setAssociatedObject(self, &kEMPTY, @(empty), OBJC_ASSOCIATION_ASSIGN);
-}
-
--(BOOL)empty{
-    return objc_getAssociatedObject(self, &kEMPTY);
-}
 
 /**
  判断数组是否为空
@@ -26,10 +16,7 @@ static const void *kEMPTY;
  @return YES: 数组为空,NO: 数组不为空
  */
 - (BOOL) isEmpty {
-    if (self.count) {
-        return NO;
-    }
-    return YES;
+    return self == nil || self.count == 0;
 }
 
 @end

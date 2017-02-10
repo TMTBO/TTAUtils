@@ -19,7 +19,10 @@ typedef void (^TTAConfigureCellBlock)(id cell, id item);
 /**
  获取数据源中对应数据
  */
+- (NSArray <id>*)groupAtSection:(NSInteger)section;
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)headerTitleAtSection:(NSInteger)section;
+- (NSString *)footerTitleAtSection:(NSInteger)section;
 
 /**
  设置数据源的数据数组,设置完成后自动刷新
@@ -28,5 +31,7 @@ typedef void (^TTAConfigureCellBlock)(id cell, id item);
  @param groups 数据数组
  */
 - (void)setView:(id)aView withGroups:(NSArray *)groups;
+- (void)setHeaderTitles:(NSArray <NSString *> *)headerTitles;
+- (void)setFooterTitles:(NSArray <NSString *> *)footerTitles;
 
 @end

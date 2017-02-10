@@ -9,11 +9,13 @@
 #import "TTABaseArrayDataSource.h"
 
 @interface TTABaseArrayDataSource () {
-    NSArray <NSArray <id> *> *_groups;
     /**
      *  数据源数组
      */
 //    NSArray *_items;
+    NSArray <NSArray <id> *> *_groups;
+    NSArray <NSString *> *_headerTitles;
+    NSArray <NSString *> *_footerTitles;
     /**
      *  cell 重用标识
      */
@@ -39,12 +41,20 @@
     return self;
 }
 
-- (NSArray <id>*)groupAtIndexPath:(NSInteger)section {
+- (NSArray <id>*)groupAtSection:(NSInteger)section {
     return _groups[section];
 }
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self groupAtIndexPath:indexPath.section][indexPath.row];
+    return [self groupAtSection:indexPath.section][indexPath.row];
+}
+
+- (NSString *)headerTitleAtSection:(NSInteger)section {
+    return _headerTitles[section];
+}
+
+- (NSString *)footerTitleAtSection:(NSInteger)section {
+    return _footerTitles[section];
 }
 
 #pragma mark - UITableViewDataSource
@@ -53,7 +63,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self groupAtIndexPath:section].count;
+    return [self groupAtSection:section].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,13 +73,21 @@
     return cell;
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [self headerTitleAtSection:section];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    return [self footerTitleAtSection:section];
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return _groups.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self groupAtIndexPath:section].count;
+    return [self groupAtSection:section].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,6 +96,7 @@
     _configureCellBlock(cell, item);
     return cell;
 }
+
 
 #pragma mark - Getter && Setter
 
@@ -94,4 +113,13 @@
         [aView reloadData];
     }
 }
+
+- (void)setHeaderTitles:(NSArray <NSString *> *)headerTitles {
+    _headerTitles = headerTitles;
+}
+
+- (void)setFooterTitles:(NSArray <NSString *> *)footerTitles {
+    _footerTitles = footerTitles;
+}
+
 @end

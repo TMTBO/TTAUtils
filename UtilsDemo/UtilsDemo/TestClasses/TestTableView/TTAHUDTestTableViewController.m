@@ -32,6 +32,7 @@
 
 - (void)getData {
     NSArray *items = @[@[@"loading", @"loadingMessage", @"loadingMessageInView", @"loadingMessageDelay"], @[@"stopLoading", @"stopLoadingMessage", @"stopLoadingMessageDelay"], @[@"tipMessage", @"tipMessageDelay", @"tipMessageDelayCompletion"]];
+    [_baseArrayDataSource setHeaderTitles:@[@"loading", @"stopLoading", @"tipMessage"]];
     [_baseArrayDataSource setView:_tableView withGroups:items];
 }
 
