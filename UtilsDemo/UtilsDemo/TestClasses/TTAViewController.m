@@ -8,6 +8,7 @@
 
 #import "TTAViewController.h"
 #import "TTATestTableViewController.h"
+#import "TTALanguageTool.h"
 
 @interface TTAViewController ()
 
@@ -30,6 +31,19 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+}
+
+- (void)testChangeLanguage {
+    self.title = TTANSLocalizedString(@"baseVcTitle");
+}
+
+- (void)testSetNewLanguage {
+    [[TTALanguageTool sharedTool] setNewLanguage:kAppLanguageEN];
+}
+
+- (void)testGetCurrentLanguage {
+    NSString *language = [[TTALanguageTool sharedTool] getCurrentLanguage];
+    NSLog(@"current language %@", language);
     
 }
 

@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  UtilsDemo
+
+  Created by TobyoTenma on 13/02/2017.
+  Copyright © 2017 TobyoTenma. All rights reserved.
+*/
+
+"baseVcTitle" = "根控制器标题";

@@ -42,6 +42,9 @@
 		797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22091D8AED2800770B72 /* UtilsDemoTests.m */; };
 		797D22151D8AED2800770B72 /* UtilsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22141D8AED2800770B72 /* UtilsDemoUITests.m */; };
 		797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D22251D8AEDB100770B72 /* UIView+Frame.m */; };
+		79B03E521E5154820090A72F /* TTAApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E511E5154820090A72F /* TTAApiProxy.m */; };
+		79B03E591E516D150090A72F /* TTALanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E581E516D150090A72F /* TTALanguageTool.m */; };
+		79B03E5C1E5193510090A72F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B03E5E1E5193510090A72F /* Localizable.strings */; };
 		79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
@@ -143,6 +146,13 @@
 		797D22161D8AED2800770B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797D22241D8AEDB100770B72 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		797D22251D8AEDB100770B72 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		79B03E501E5154820090A72F /* TTAApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAApiProxy.h; sourceTree = "<group>"; };
+		79B03E511E5154820090A72F /* TTAApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAApiProxy.m; sourceTree = "<group>"; };
+		79B03E571E516D150090A72F /* TTALanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTALanguageTool.h; sourceTree = "<group>"; };
+		79B03E581E516D150090A72F /* TTALanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTALanguageTool.m; sourceTree = "<group>"; };
+		79B03E5F1E5193880090A72F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		79B03E601E5193880090A72F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79B03E611E5193930090A72F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79C604AC1DCCDE56001CA4A0 /* TTATestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTATestTableViewController.h; sourceTree = "<group>"; };
 		79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTATestTableViewController.m; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -343,6 +353,7 @@
 		797D21EE1D8AED2800770B72 /* UtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				79B03E4B1E51540F0090A72F /* Network */,
 				79C604AA1DCCDE56001CA4A0 /* TestClasses */,
 				797D22221D8AED7E00770B72 /* Utils */,
 				790174BD1DC78E6700D87D2A /* Classes */,
@@ -357,6 +368,7 @@
 				797D21FB1D8AED2800770B72 /* Assets.xcassets */,
 				797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */,
 				797D22001D8AED2800770B72 /* Info.plist */,
+				79B03E5E1E5193510090A72F /* Localizable.strings */,
 				797D21EF1D8AED2800770B72 /* Supporting Files */,
 			);
 			path = UtilsDemo;
@@ -429,6 +441,32 @@
 			path = TTACoreDataManagedContext;
 			sourceTree = "<group>";
 		};
+		79B03E4B1E51540F0090A72F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				79B03E4F1E5154820090A72F /* ApiProxy */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		79B03E4F1E5154820090A72F /* ApiProxy */ = {
+			isa = PBXGroup;
+			children = (
+				79B03E501E5154820090A72F /* TTAApiProxy.h */,
+				79B03E511E5154820090A72F /* TTAApiProxy.m */,
+			);
+			path = ApiProxy;
+			sourceTree = "<group>";
+		};
+		79B03E561E516C8F0090A72F /* TTALanguageChange */ = {
+			isa = PBXGroup;
+			children = (
+				79B03E571E516D150090A72F /* TTALanguageTool.h */,
+				79B03E581E516D150090A72F /* TTALanguageTool.m */,
+			);
+			path = TTALanguageChange;
+			sourceTree = "<group>";
+		};
 		79C604AA1DCCDE56001CA4A0 /* TestClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +504,7 @@
 		79EBC6DF1DB9D3F100790196 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				79B03E561E516C8F0090A72F /* TTALanguageChange */,
 				79F4CD361E4B516F0038D915 /* TTAHUD */,
 				797F48261DC0FAA4004996EF /* TTACoreDataManagedContext */,
 				79C960E11DB9D67E00A28335 /* TTAWebViewController */,
@@ -595,6 +634,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 797D21E31D8AED2800770B72;
 			productRefGroup = 797D21ED1D8AED2800770B72 /* Products */;
@@ -613,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B03E5C1E5193510090A72F /* Localizable.strings in Resources */,
 				7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */,
 				797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */,
 				79C960E91DB9D6C800A28335 /* TestPay.html in Resources */,
@@ -786,6 +827,7 @@
 				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
 				792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,
+				79B03E521E5154820090A72F /* TTAApiProxy.m in Sources */,
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,
 				790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */,
 				792D70341DCEE99700C3E8FF /* TTABaseTableViewController.m in Sources */,
@@ -808,6 +850,7 @@
 				79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */,
 				792B1BD21DB92CEF00FF326D /* UIImage+Common.m in Sources */,
 				797D21F11D8AED2800770B72 /* main.m in Sources */,
+				79B03E591E516D150090A72F /* TTALanguageTool.m in Sources */,
 				792D70351DCEE99700C3E8FF /* TTABaseViewController.m in Sources */,
 				795AC74C1DB3323D00419703 /* UIView+Common.m in Sources */,
 				795AC7521DB3403900419703 /* UIViewCommon.swift in Sources */,
@@ -851,8 +894,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				797D21FE1D8AED2800770B72 /* Base */,
+				79B03E5F1E5193880090A72F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79B03E5E1E5193510090A72F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79B03E601E5193880090A72F /* zh-Hans */,
+				79B03E611E5193930090A72F /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -862,6 +915,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -911,6 +965,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

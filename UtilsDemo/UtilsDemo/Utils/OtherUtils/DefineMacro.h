@@ -10,7 +10,6 @@
 
 #endif
 
-
 /*==================== Screen ========================*/
 #pragma mark - Screen
 #define kSCREEN_SCALE [UIScreen mainScreen].scale
@@ -107,4 +106,3 @@ alpha:a]
 
 //获取沙盒 Cache
 #define kPATH_CACHES_PATH [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-
