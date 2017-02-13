@@ -45,6 +45,7 @@
 		79B03E521E5154820090A72F /* TTAApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E511E5154820090A72F /* TTAApiProxy.m */; };
 		79B03E591E516D150090A72F /* TTALanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E581E516D150090A72F /* TTALanguageTool.m */; };
 		79B03E5C1E5193510090A72F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B03E5E1E5193510090A72F /* Localizable.strings */; };
+		79B03E641E5195790090A72F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B03E661E5195790090A72F /* InfoPlist.strings */; };
 		79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
@@ -153,6 +154,7 @@
 		79B03E5F1E5193880090A72F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		79B03E601E5193880090A72F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		79B03E611E5193930090A72F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79B03E651E5195790090A72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79C604AC1DCCDE56001CA4A0 /* TTATestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTATestTableViewController.h; sourceTree = "<group>"; };
 		79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTATestTableViewController.m; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 				797D21FB1D8AED2800770B72 /* Assets.xcassets */,
 				797D21FD1D8AED2800770B72 /* LaunchScreen.storyboard */,
 				797D22001D8AED2800770B72 /* Info.plist */,
+				79B03E661E5195790090A72F /* InfoPlist.strings */,
 				79B03E5E1E5193510090A72F /* Localizable.strings */,
 				797D21EF1D8AED2800770B72 /* Supporting Files */,
 			);
@@ -654,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B03E5C1E5193510090A72F /* Localizable.strings in Resources */,
+				79B03E641E5195790090A72F /* InfoPlist.strings in Resources */,
 				7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */,
 				797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */,
 				79C960E91DB9D6C800A28335 /* TestPay.html in Resources */,
@@ -906,6 +910,14 @@
 				79B03E611E5193930090A72F /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		79B03E661E5195790090A72F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79B03E651E5195790090A72F /* Base */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
