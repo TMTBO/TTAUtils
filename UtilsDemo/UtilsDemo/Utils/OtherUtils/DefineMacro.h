@@ -15,6 +15,17 @@
 #define kSCREEN_SCALE [UIScreen mainScreen].scale
 #define kSCREEN_BOUNDS [UIScreen mainScreen].bounds
 
+#define kSCALE5 (kSCREEN_WIDTH / 320)
+#define kSCALE6 (kSCREEN_WIDTH / 375)
+#define kSCALEP (kSCREEN_WIDTH / 414)
+
+// 对于尺寸放大时,用以上比例时会过分放大;小尺寸时,用以上比例会无明显效果;
+// 用以下宏对比例做修正
+// 注意: 这里的 ratio 一定要大于 0.86,否则尺寸会过分缩小;ratio 大于 1 为放大,小于 1 为缩小
+#define kKSCALE5(ratio) (kSCALE5 > 1 ? kSCALE5 * ratio : kSCALE5)
+#define kKSCALE6(ratio) (kSCALE6 > 1 ? kSCALE6 * ratio : kSCALE6)
+#define kKSCALEP(ratio) (kSCALEP > 1 ? kSCALEP * ratio : kSCALEP)
+
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 // 当前Xcode支持iOS8及以上
 #define KSCREEN_WIDTH ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
 #define kSCREENH_HEIGHT ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.height)
