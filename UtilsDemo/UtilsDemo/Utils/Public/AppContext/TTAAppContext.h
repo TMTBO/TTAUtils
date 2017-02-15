@@ -57,7 +57,7 @@
 - (void)updateAccessToken:(NSString *)accessToken refreshToken:(NSString *)refreshToken;
 - (void)cleanUserInfo;
 
-- (void)appStarted;
-- (void)appEnded;
+//- (void)appStarted;
+//- (void)appEnded;
 
 @end
