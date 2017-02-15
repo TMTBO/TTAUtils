@@ -26,6 +26,7 @@
 #import "UIView+Frame.h"                                /// frame修改相关
 #import "NSString+RegularExpression.h"                  /// 正则相关
 #import "NSString+Matching.h"                           /// 智能匹配
+#import "NSString+Hash.h"
 #import "NSObject+Log.h"                                /// 数组与字典输入详情
 
 #pragma mark - Block
@@ -36,6 +37,7 @@
 #import "TTASingleton.h"
 #import "DefineMacro.h"
 #import "ConstConfig.h"
+#import "TTANetworkConfigurations.h"
 
 #pragma mark - Swift
 #import "UtilsDemo-Swift.h"

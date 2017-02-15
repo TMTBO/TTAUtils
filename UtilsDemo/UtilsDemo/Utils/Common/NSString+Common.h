@@ -13,4 +13,7 @@
 /** 判断当前字符串是否为 nil 或者 长度为 0 */
 @property (nonatomic, assign, readonly, getter=isEmpty) BOOL empty;
 
++ (NSString *)stringWithObject:(id)anObject;
++ (id)objectWithString:(NSString *)aString;
+
 @end

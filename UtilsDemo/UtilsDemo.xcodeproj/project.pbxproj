@@ -16,6 +16,10 @@
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
 		7912DE8A1E4C004F007307F6 /* TTAHUDTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */; };
 		7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */; };
+		791EE4371E53362800C80B6E /* TTAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EE4361E53362800C80B6E /* TTAService.m */; };
+		791EE43B1E533EA600C80B6E /* TTAApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EE43A1E533EA600C80B6E /* TTAApiManager.m */; };
+		791EE43E1E5353B200C80B6E /* TTAProductApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EE43D1E5353B200C80B6E /* TTAProductApiService.m */; };
+		791EE4411E535A4000C80B6E /* TTAServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EE4401E535A4000C80B6E /* TTAServiceFactory.m */; };
 		79214DA21E4ACB8F0085041A /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79214DA11E4ACB8F0085041A /* UILabel+Common.m */; };
 		79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79243E651DDB63CA008E35C4 /* UINavigationController+Common.m */; };
 		7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926A1751DC8DD6100DF4744 /* TTACoreDataManagedContext.m */; };
@@ -46,10 +50,16 @@
 		79B03E591E516D150090A72F /* TTALanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E581E516D150090A72F /* TTALanguageTool.m */; };
 		79B03E5C1E5193510090A72F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B03E5E1E5193510090A72F /* Localizable.strings */; };
 		79B03E641E5195790090A72F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79B03E661E5195790090A72F /* InfoPlist.strings */; };
+		79B03E691E51B0550090A72F /* TTARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E681E51B0550090A72F /* TTARequest.m */; };
+		79B03E6C1E51B5050090A72F /* TTAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B03E6B1E51B5050090A72F /* TTAResponse.m */; };
 		79C604AE1DCCDE56001CA4A0 /* TTATestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */; };
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
 		79C960E91DB9D6C800A28335 /* TestPay.html in Resources */ = {isa = PBXBuildFile; fileRef = 79C960E81DB9D6C800A28335 /* TestPay.html */; };
+		79E869FC1E53F91D00A66933 /* TTANetworkConfigurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79E869FB1E53F91D00A66933 /* TTANetworkConfigurations.plist */; };
+		79E86A001E53F9E200A66933 /* TTAAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E869FF1E53F9E200A66933 /* TTAAppContext.m */; };
+		79E86A041E54072200A66933 /* TTARequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E86A031E54072200A66933 /* TTARequestTests.m */; };
+		79E86A081E540E9400A66933 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E86A071E540E9400A66933 /* NSString+Hash.m */; };
 		79F4CD391E4B55000038D915 /* TTAHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F4CD381E4B55000038D915 /* TTAHUD.m */; };
 		79F4CD3C1E4B5F8D0038D915 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F4CD3B1E4B5F8D0038D915 /* NSString+Common.m */; };
 		87B4979297EDEEFFDE58D9C8 /* Pods_UtilsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C061EF37805FF7E9CDF40E /* Pods_UtilsDemoTests.framework */; };
@@ -92,6 +102,15 @@
 		7912DE881E4C004F007307F6 /* TTAHUDTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAHUDTestTableViewController.h; sourceTree = "<group>"; };
 		7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAHUDTestTableViewController.m; sourceTree = "<group>"; };
 		7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TTAHUDIcon.bundle; sourceTree = "<group>"; };
+		791EE4351E53362800C80B6E /* TTAService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAService.h; sourceTree = "<group>"; };
+		791EE4361E53362800C80B6E /* TTAService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAService.m; sourceTree = "<group>"; };
+		791EE4381E533D2000C80B6E /* TTANetworkConfigurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTANetworkConfigurations.h; sourceTree = "<group>"; };
+		791EE4391E533EA600C80B6E /* TTAApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAApiManager.h; sourceTree = "<group>"; };
+		791EE43A1E533EA600C80B6E /* TTAApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAApiManager.m; sourceTree = "<group>"; };
+		791EE43C1E5353B200C80B6E /* TTAProductApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAProductApiService.h; sourceTree = "<group>"; };
+		791EE43D1E5353B200C80B6E /* TTAProductApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAProductApiService.m; sourceTree = "<group>"; };
+		791EE43F1E535A4000C80B6E /* TTAServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAServiceFactory.h; sourceTree = "<group>"; };
+		791EE4401E535A4000C80B6E /* TTAServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAServiceFactory.m; sourceTree = "<group>"; };
 		79214DA01E4ACB8F0085041A /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
 		79214DA11E4ACB8F0085041A /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
 		79243E641DDB63CA008E35C4 /* UINavigationController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Common.h"; sourceTree = "<group>"; };
@@ -155,6 +174,10 @@
 		79B03E601E5193880090A72F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		79B03E611E5193930090A72F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79B03E651E5195790090A72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79B03E671E51B0550090A72F /* TTARequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTARequest.h; sourceTree = "<group>"; };
+		79B03E681E51B0550090A72F /* TTARequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTARequest.m; sourceTree = "<group>"; };
+		79B03E6A1E51B5050090A72F /* TTAResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAResponse.h; sourceTree = "<group>"; };
+		79B03E6B1E51B5050090A72F /* TTAResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAResponse.m; sourceTree = "<group>"; };
 		79C604AC1DCCDE56001CA4A0 /* TTATestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTATestTableViewController.h; sourceTree = "<group>"; };
 		79C604AD1DCCDE56001CA4A0 /* TTATestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTATestTableViewController.m; sourceTree = "<group>"; };
 		79C960E21DB9D67E00A28335 /* TTAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAWebViewController.h; sourceTree = "<group>"; };
@@ -162,6 +185,12 @@
 		79C960E41DB9D67E00A28335 /* ZLCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCWebView.h; sourceTree = "<group>"; };
 		79C960E51DB9D67E00A28335 /* ZLCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCWebView.m; sourceTree = "<group>"; };
 		79C960E81DB9D6C800A28335 /* TestPay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestPay.html; sourceTree = "<group>"; };
+		79E869FB1E53F91D00A66933 /* TTANetworkConfigurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TTANetworkConfigurations.plist; sourceTree = "<group>"; };
+		79E869FE1E53F9E200A66933 /* TTAAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAAppContext.h; sourceTree = "<group>"; };
+		79E869FF1E53F9E200A66933 /* TTAAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAAppContext.m; sourceTree = "<group>"; };
+		79E86A031E54072200A66933 /* TTARequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTARequestTests.m; sourceTree = "<group>"; };
+		79E86A061E540E9400A66933 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		79E86A071E540E9400A66933 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		79F4CD371E4B55000038D915 /* TTAHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAHUD.h; sourceTree = "<group>"; };
 		79F4CD381E4B55000038D915 /* TTAHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAHUD.m; sourceTree = "<group>"; };
 		79F4CD3A1E4B5F8D0038D915 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
@@ -297,6 +326,19 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		791EE4341E53362800C80B6E /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				791EE4351E53362800C80B6E /* TTAService.h */,
+				791EE4361E53362800C80B6E /* TTAService.m */,
+				791EE43F1E535A4000C80B6E /* TTAServiceFactory.h */,
+				791EE4401E535A4000C80B6E /* TTAServiceFactory.m */,
+				791EE43C1E5353B200C80B6E /* TTAProductApiService.h */,
+				791EE43D1E5353B200C80B6E /* TTAProductApiService.m */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
 		792B1BD91DB930E200FF326D /* OtherUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +431,7 @@
 		797D22081D8AED2800770B72 /* UtilsDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				79E86A031E54072200A66933 /* TTARequestTests.m */,
 				797D22091D8AED2800770B72 /* UtilsDemoTests.m */,
 				797D220B1D8AED2800770B72 /* Info.plist */,
 			);
@@ -421,6 +464,7 @@
 		797D22231D8AED7E00770B72 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				79E86A051E540E9400A66933 /* Security */,
 				792B1BD31DB92D1C00FF326D /* NSObject+Log.h */,
 				792B1BD41DB92D1C00FF326D /* NSObject+Log.m */,
 				792B1BCA1DB92CA200FF326D /* NSString+RegularExpression.h */,
@@ -447,6 +491,11 @@
 		79B03E4B1E51540F0090A72F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				791EE4381E533D2000C80B6E /* TTANetworkConfigurations.h */,
+				79E869FB1E53F91D00A66933 /* TTANetworkConfigurations.plist */,
+				791EE4391E533EA600C80B6E /* TTAApiManager.h */,
+				791EE43A1E533EA600C80B6E /* TTAApiManager.m */,
+				791EE4341E53362800C80B6E /* ApiService */,
 				79B03E4F1E5154820090A72F /* ApiProxy */,
 			);
 			path = Network;
@@ -457,6 +506,10 @@
 			children = (
 				79B03E501E5154820090A72F /* TTAApiProxy.h */,
 				79B03E511E5154820090A72F /* TTAApiProxy.m */,
+				79B03E671E51B0550090A72F /* TTARequest.h */,
+				79B03E681E51B0550090A72F /* TTARequest.m */,
+				79B03E6A1E51B5050090A72F /* TTAResponse.h */,
+				79B03E6B1E51B5050090A72F /* TTAResponse.m */,
 			);
 			path = ApiProxy;
 			sourceTree = "<group>";
@@ -504,9 +557,28 @@
 			path = TTAWebViewController;
 			sourceTree = "<group>";
 		};
+		79E869FD1E53F9E200A66933 /* AppContext */ = {
+			isa = PBXGroup;
+			children = (
+				79E869FE1E53F9E200A66933 /* TTAAppContext.h */,
+				79E869FF1E53F9E200A66933 /* TTAAppContext.m */,
+			);
+			path = AppContext;
+			sourceTree = "<group>";
+		};
+		79E86A051E540E9400A66933 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				79E86A061E540E9400A66933 /* NSString+Hash.h */,
+				79E86A071E540E9400A66933 /* NSString+Hash.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 		79EBC6DF1DB9D3F100790196 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				79E869FD1E53F9E200A66933 /* AppContext */,
 				79B03E561E516C8F0090A72F /* TTALanguageChange */,
 				79F4CD361E4B516F0038D915 /* TTAHUD */,
 				797F48261DC0FAA4004996EF /* TTACoreDataManagedContext */,
@@ -658,6 +730,7 @@
 			files = (
 				79B03E5C1E5193510090A72F /* Localizable.strings in Resources */,
 				79B03E641E5195790090A72F /* InfoPlist.strings in Resources */,
+				79E869FC1E53F91D00A66933 /* TTANetworkConfigurations.plist in Resources */,
 				7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */,
 				797D21FF1D8AED2800770B72 /* LaunchScreen.storyboard in Resources */,
 				79C960E91DB9D6C800A28335 /* TestPay.html in Resources */,
@@ -824,6 +897,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791EE43B1E533EA600C80B6E /* TTAApiManager.m in Sources */,
 				79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */,
 				792B1BD11DB92CEF00FF326D /* UIColor+Common.m in Sources */,
 				792D70381DCEE9A200C3E8FF /* TTAMainTabBarController.m in Sources */,
@@ -841,13 +915,18 @@
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
 				790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */,
 				792D70471DCF30B800C3E8FF /* TTAViewController2.m in Sources */,
+				79B03E691E51B0550090A72F /* TTARequest.m in Sources */,
 				79F4CD391E4B55000038D915 /* TTAHUD.m in Sources */,
 				792D70441DCF2ECA00C3E8FF /* TTAViewController.m in Sources */,
 				7926A1761DC8DD6100DF4744 /* TTACoreDataManagedContext.m in Sources */,
 				792D70331DCEE99700C3E8FF /* TTABaseCollectionViewController.m in Sources */,
 				79243E661DDB63CA008E35C4 /* UINavigationController+Common.m in Sources */,
+				79E86A001E53F9E200A66933 /* TTAAppContext.m in Sources */,
+				791EE43E1E5353B200C80B6E /* TTAProductApiService.m in Sources */,
 				792D70321DCEE99700C3E8FF /* TTABaseArrayDataSource.m in Sources */,
 				790174C91DC790F800D87D2A /* AppDelegate+AppService.m in Sources */,
+				791EE4411E535A4000C80B6E /* TTAServiceFactory.m in Sources */,
+				79B03E6C1E51B5050090A72F /* TTAResponse.m in Sources */,
 				797D21F41D8AED2800770B72 /* AppDelegate.m in Sources */,
 				792B1BCC1DB92CA200FF326D /* NSString+RegularExpression.m in Sources */,
 				79F4CD3C1E4B5F8D0038D915 /* NSString+Common.m in Sources */,
@@ -857,7 +936,9 @@
 				79B03E591E516D150090A72F /* TTALanguageTool.m in Sources */,
 				792D70351DCEE99700C3E8FF /* TTABaseViewController.m in Sources */,
 				795AC74C1DB3323D00419703 /* UIView+Common.m in Sources */,
+				79E86A081E540E9400A66933 /* NSString+Hash.m in Sources */,
 				795AC7521DB3403900419703 /* UIViewCommon.swift in Sources */,
+				791EE4371E53362800C80B6E /* TTAService.m in Sources */,
 				792D70411DCF1DF500C3E8FF /* UIView+Effect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,6 +948,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				797D220A1D8AED2800770B72 /* UtilsDemoTests.m in Sources */,
+				79E86A041E54072200A66933 /* TTARequestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

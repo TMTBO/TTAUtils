@@ -8,6 +8,7 @@ target 'UtilsDemo' do
   # Pods for UtilsDemo
 pod 'MJRefresh'
 pod 'MBProgressHUD'
+pod 'AFNetworking'
 
   target 'UtilsDemoTests' do
     inherit! :search_paths

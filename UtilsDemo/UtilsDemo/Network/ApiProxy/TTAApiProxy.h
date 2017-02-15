@@ -6,8 +6,19 @@
 //  Copyright © 2017 TobyoTenma. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AFHTTPSessionManager.h"
+#import "TTARequest.h"
+#import "TTAResponse.h"
 
-@interface TTAApiProxy : NSObject
+typedef void(^TTAResponseCompletionHandler)(TTAResponse *response);
+
+@interface TTAApiProxy : AFHTTPSessionManager
+
++ (instancetype)sharedInstance;
+
+- (void)callApiWithRequest:(TTARequest *)request completionHandler:(TTAResponseCompletionHandler)completionHandler;
+
+- (void)cancelRequestWithRequestId:(NSString *)aRequestId;
+- (void)cancelRequestWithRequsetIdList:(NSArray <NSString *>*)aRequestIdList;
 
 @end
