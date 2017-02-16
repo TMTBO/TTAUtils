@@ -14,19 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - IQActionSheetPickerView (1.0.4)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
 
 DEPENDENCIES:
   - AFNetworking
+  - IQActionSheetPickerView
   - MBProgressHUD
   - MJRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  IQActionSheetPickerView: 38ac311461f0843f58cba28b917c906734edc02f
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
 
-PODFILE CHECKSUM: 2c6e30a70224d72ac9d153f1a83666dce125fc2f
+PODFILE CHECKSUM: 58366acb7beb0485de52b802d6759c2d2765b54f
 
 COCOAPODS: 1.2.0

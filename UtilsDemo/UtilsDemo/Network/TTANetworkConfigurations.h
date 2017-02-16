@@ -24,6 +24,8 @@ extern NSString *const kTTAProductApiService;
 
 
 #import "TTAApiManager.h"
+#import "TTARequest.h"
+#import "TTAResponse.h"
 
 
 #endif /* TTANetworkConfigurations_h */

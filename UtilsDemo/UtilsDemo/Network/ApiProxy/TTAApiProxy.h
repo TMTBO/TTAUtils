@@ -7,8 +7,6 @@
 //
 
 #import "AFHTTPSessionManager.h"
-#import "TTARequest.h"
-#import "TTAResponse.h"
 
 typedef void(^TTAResponseCompletionHandler)(TTAResponse *response);
 

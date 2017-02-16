@@ -9,6 +9,7 @@ target 'UtilsDemo' do
 pod 'MJRefresh'
 pod 'MBProgressHUD'
 pod 'AFNetworking'
+pod 'IQActionSheetPickerView'
 
   target 'UtilsDemoTests' do
     inherit! :search_paths
