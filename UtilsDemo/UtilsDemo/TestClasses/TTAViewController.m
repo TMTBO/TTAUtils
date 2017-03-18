@@ -27,7 +27,7 @@
 }
 
 - (void)setupUI {
-    
+    [self testUIButtonLayoutType];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -45,6 +45,18 @@
     NSString *language = [[TTALanguageTool sharedTool] getCurrentLanguage];
     NSLog(@"current language %@", language);
     
+}
+
+- (void)testUIButtonLayoutType {
+    UIButton *button = [[UIButton alloc] init];
+    [self.view addSubview:button];
+    button.frame = CGRectMake(0, 0, 200, 200);
+    [button tta_centerEqualToView:self.view];
+    [button setBackgroundColor:kLIGHT_GRAY_COLOR];
+    
+    [button setImage:[UIImage tta_imageWithColor:kBLUE_COLOR withFrame:CGRectMake(0, 0, 50,50)] forState:UIControlStateNormal];
+    [button setTitle:@"Hello world" forState:UIControlStateNormal];
+    [button setButtonLayoutType:UIButtonLayoutTypeImageCenterTitleBottomToButton padding:10.f];
 }
 
 /** uiview 添加手势方法测试 */

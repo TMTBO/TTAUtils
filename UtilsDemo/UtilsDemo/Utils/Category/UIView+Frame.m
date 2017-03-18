@@ -103,7 +103,7 @@
     CGRect boundsRect = self.bounds;
     boundsRect.size.width = newSize.width;
     boundsRect.size.height = newSize.height;
-    self.bounds = boundsRect;
+    self.frame = boundsRect;
 }
 
 - (CGPoint)tta_center {
@@ -145,32 +145,55 @@
     self.frame = tta_frame;
 }
 
-- (CGFloat)tta_top {
-    return self.tta_y;
-}
-- (void)setTta_top:(CGFloat)tta_top {
-    self.frame = CGRectMake(self.tta_left, tta_top, self.tta_width, self.tta_height);
+- (void)tta_heightEqualToView:(__kindof UIView *)aView {
+    self.tta_height = aView.tta_height;
 }
 
-- (CGFloat)tta_bottom {
-    return self.tta_y + self.tta_height;
-}
-- (void)setTta_bottom:(CGFloat)tta_bottom {
-    self.frame = CGRectMake(self.tta_left, tta_bottom - self.tta_height, self.tta_width, self.tta_height);
+- (void)tta_widthEqualToView:(__kindof UIView *)aView {
+    self.tta_width = aView.tta_width;
 }
 
-- (CGFloat)tta_left {
-    return self.tta_x;
-}
-- (void)setTta_left:(CGFloat)tta_left {
-    self.frame = CGRectMake(tta_left, self.tta_top, self.tta_width, self.tta_height);
+- (void)tta_sizeEqualToView:(__kindof UIView *)aView {
+    self.tta_size = aView.tta_size;
 }
 
-- (CGFloat)tta_right {
-    return self.tta_x + self.tta_width;
+- (void)tta_centerEqualToView:(__kindof UIView *)aView {
+    UIView *superView = aView.superview ? aView.superview : aView;
+    CGPoint superCenterPoint = [superView convertPoint:aView.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:superCenterPoint toView:aView];
+    self.tta_center = centerPoint;
 }
-- (void)setTta_right:(CGFloat)tta_right {
-    self.frame = CGRectMake(tta_right - self.tta_width, self.tta_top, self.tta_width, self.tta_height);
+
+- (void)tta_centerXEqualToView:(__kindof UIView *)aView {
+    UIView *superView = aView.superview ? aView.superview : aView;
+    CGPoint superCenterPoint = [superView convertPoint:aView.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:superCenterPoint toView:aView];
+    self.tta_centerX = centerPoint.x;
+}
+
+- (void)tta_centerYEqualToView:(__kindof UIView *)aView {
+    UIView *superView = aView.superview ? aView.superview : aView;
+    CGPoint superCenterPoint = [superView convertPoint:aView.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:superCenterPoint toView:aView];
+    self.tta_centerY = centerPoint.y;
+}
+
+
+
+- (__kindof UIView *)topSuperView {
+    UIView *topView = self.superview;
+    if (topView) {
+        while (topView.superview) {
+            topView = topView.superview;
+        }
+    } else {
+        topView = self;
+    }
+    return topView;
+}
+
+- (void)setTopSuperView:(UIView *)topSuperView {
+    self.topSuperView = topSuperView;
 }
 
 /*==================== Block链式 ========================*/

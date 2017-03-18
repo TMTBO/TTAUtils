@@ -25,10 +25,14 @@
 @property (nonatomic, assign) CGRect tta_frame;
 @property (nonatomic, assign) CGRect tta_bounds;
 
-@property (nonatomic, assign) CGFloat tta_top;
-@property (nonatomic, assign) CGFloat tta_bottom;
-@property (nonatomic, assign) CGFloat tta_left;
-@property (nonatomic, assign) CGFloat tta_right;
+@property (nonatomic, strong) UIView *topSuperView;
+
+- (void)tta_heightEqualToView:(__kindof UIView *)aView;
+- (void)tta_widthEqualToView:(__kindof UIView *)aView;
+- (void)tta_sizeEqualToView:(__kindof UIView *)aView;
+- (void)tta_centerEqualToView:(__kindof UIView *)aView;
+- (void)tta_centerXEqualToView:(__kindof UIView *)aView;
+- (void)tta_centerYEqualToView:(__kindof UIView *)aView;
 
 /// 链式调用设置viewframe相关属性
 - (UIView * (^)(CGFloat))chain_x;

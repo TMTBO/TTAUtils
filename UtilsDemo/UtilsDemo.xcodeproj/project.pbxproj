@@ -14,6 +14,7 @@
 		790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539CE1DA61E96002EB686 /* NSArray+Common.m */; };
 		790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D01DA61E96002EB686 /* NSDictionary+Common.m */; };
 		790539D71DA627C3002EB686 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 790539D61DA627C3002EB686 /* UIButton+Block.m */; };
+		79092BD51E5E7DC50037345C /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 79092BD41E5E7DC50037345C /* UIButton+Common.m */; };
 		7912DE8A1E4C004F007307F6 /* TTAHUDTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */; };
 		7912DE8C1E4C20D4007307F6 /* TTAHUDIcon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */; };
 		791EE4371E53362800C80B6E /* TTAService.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EE4361E53362800C80B6E /* TTAService.m */; };
@@ -56,6 +57,7 @@
 		79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E31DB9D67E00A28335 /* TTAWebViewController.m */; };
 		79C960E71DB9D67E00A28335 /* ZLCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C960E51DB9D67E00A28335 /* ZLCWebView.m */; };
 		79C960E91DB9D6C800A28335 /* TestPay.html in Resources */ = {isa = PBXBuildFile; fileRef = 79C960E81DB9D6C800A28335 /* TestPay.html */; };
+		79E6E6671E5DC60B000A7DBB /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6E6661E5DC60B000A7DBB /* UIView+LayoutMethods.m */; };
 		79E869FC1E53F91D00A66933 /* TTANetworkConfigurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79E869FB1E53F91D00A66933 /* TTANetworkConfigurations.plist */; };
 		79E86A001E53F9E200A66933 /* TTAAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E869FF1E53F9E200A66933 /* TTAAppContext.m */; };
 		79E86A041E54072200A66933 /* TTARequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E86A031E54072200A66933 /* TTARequestTests.m */; };
@@ -99,6 +101,8 @@
 		790539D41DA61F5B002EB686 /* GlobalUtils.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.pch; sourceTree = "<group>"; };
 		790539D51DA627C3002EB686 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		790539D61DA627C3002EB686 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		79092BD31E5E7DC50037345C /* UIButton+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Common.h"; sourceTree = "<group>"; };
+		79092BD41E5E7DC50037345C /* UIButton+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Common.m"; sourceTree = "<group>"; };
 		7912DE881E4C004F007307F6 /* TTAHUDTestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAHUDTestTableViewController.h; sourceTree = "<group>"; };
 		7912DE891E4C004F007307F6 /* TTAHUDTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAHUDTestTableViewController.m; sourceTree = "<group>"; };
 		7912DE8B1E4C20D4007307F6 /* TTAHUDIcon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TTAHUDIcon.bundle; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 		79C960E41DB9D67E00A28335 /* ZLCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCWebView.h; sourceTree = "<group>"; };
 		79C960E51DB9D67E00A28335 /* ZLCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCWebView.m; sourceTree = "<group>"; };
 		79C960E81DB9D6C800A28335 /* TestPay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TestPay.html; sourceTree = "<group>"; };
+		79E6E6651E5DC60B000A7DBB /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		79E6E6661E5DC60B000A7DBB /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		79E869FB1E53F91D00A66933 /* TTANetworkConfigurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TTANetworkConfigurations.plist; sourceTree = "<group>"; };
 		79E869FE1E53F9E200A66933 /* TTAAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAAppContext.h; sourceTree = "<group>"; };
 		79E869FF1E53F9E200A66933 /* TTAAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAAppContext.m; sourceTree = "<group>"; };
@@ -311,6 +317,8 @@
 				795AC7511DB3403900419703 /* UIViewCommon.swift */,
 				79F4CD3A1E4B5F8D0038D915 /* NSString+Common.h */,
 				79F4CD3B1E4B5F8D0038D915 /* NSString+Common.m */,
+				79092BD31E5E7DC50037345C /* UIButton+Common.h */,
+				79092BD41E5E7DC50037345C /* UIButton+Common.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -471,6 +479,8 @@
 				792B1BCB1DB92CA200FF326D /* NSString+RegularExpression.m */,
 				792B1BD61DB92E4C00FF326D /* NSString+Matching.h */,
 				792B1BD71DB92E4C00FF326D /* NSString+Matching.m */,
+				79E6E6651E5DC60B000A7DBB /* UIView+LayoutMethods.h */,
+				79E6E6661E5DC60B000A7DBB /* UIView+LayoutMethods.m */,
 				797D22241D8AEDB100770B72 /* UIView+Frame.h */,
 				797D22251D8AEDB100770B72 /* UIView+Frame.m */,
 				792D703F1DCF1DF500C3E8FF /* UIView+Effect.h */,
@@ -904,12 +914,14 @@
 				79214DA21E4ACB8F0085041A /* UILabel+Common.m in Sources */,
 				790174C61DC790CD00D87D2A /* AppDelegate+RootController.m in Sources */,
 				792D703B1DCEF79C00C3E8FF /* UIAlertController+Block.m in Sources */,
+				79E6E6671E5DC60B000A7DBB /* UIView+LayoutMethods.m in Sources */,
 				797D22261D8AEDB100770B72 /* UIView+Frame.m in Sources */,
 				79B03E521E5154820090A72F /* TTAApiProxy.m in Sources */,
 				792B1BD51DB92D1C00FF326D /* NSObject+Log.m in Sources */,
 				790539D21DA61E96002EB686 /* NSDictionary+Common.m in Sources */,
 				792D70341DCEE99700C3E8FF /* TTABaseTableViewController.m in Sources */,
 				7912DE8A1E4C004F007307F6 /* TTAHUDTestTableViewController.m in Sources */,
+				79092BD51E5E7DC50037345C /* UIButton+Common.m in Sources */,
 				790539D11DA61E96002EB686 /* NSArray+Common.m in Sources */,
 				792B1BD81DB92E4C00FF326D /* NSString+Matching.m in Sources */,
 				79C960E61DB9D67E00A28335 /* TTAWebViewController.m in Sources */,
